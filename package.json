@@ -1,0 +1,20 @@
+{
+  "name": "next-cti",
+  "version": "1.0.0",
+  "description": "Sitio web de la empresa Grupo CTI",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next"
+  },
+  "keywords": [],
+  "author": "Sergio Cano Martínez",
+  "license": "ISC",
+  "dependencies": {
+    "@emotion/react": "^11.10.0",
+    "@emotion/styled": "^11.10.0",
+    "@mui/material": "^5.10.0",
+    "next": "^12.2.4",
+    "react": "^18.2.0",
+    "react-icons": "^4.4.0"
+  }
+}
