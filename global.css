@@ -319,7 +319,7 @@ body::-webkit-scrollbar-thumb{
 .card-margen{
     margin: 30px;
     filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.281));
-    box-shadow: none;
+    box-shadow: none !important;
 }
 
 .icono-servicios{
@@ -333,8 +333,8 @@ body::-webkit-scrollbar-thumb{
 }
 
 .mtb-5{
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
 }
 
 .mx-auto{
@@ -351,7 +351,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 .m-auto{
-    margin: auto;
+    margin: auto !important;
 }
 
 .pt-0{
