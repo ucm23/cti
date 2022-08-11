@@ -323,7 +323,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 .icono-servicios{
-    font-size: 3rem;
+    font-size: 3rem !important;
     color: var(--color-naranja-oscuro);
     margin: auto;
 }
