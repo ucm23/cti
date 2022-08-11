@@ -1,28 +1,41 @@
-import Card from '@mui/material/Card'
-import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
-import Button from '@mui/material/Button';
+import CardActions from '@mui/material/CardActions';
 import Typography from '@mui/material/Typography';
-import {MdOutlineSecurity} from 'react-icons/md'
-import {AiOutlineArrowRight} from 'react-icons/ai'
+import Card from '@mui/material/Card'
+import { MdExpandMore } from 'react-icons/md'
+import { Stack } from '@mui/material';
+import { ColorButton } from '../lib/theme';
+import Icon from '@mui/material/Icon'
+import { useRouter } from 'next/router'
 
-const Service = ({titulo, descrip}) => {
-  return (
-    <Card sx={{ minWidth: 275, maxWidth: 275 }} className='card-margen' >
-        <CardContent>
-            <MdOutlineSecurity className='icono-servicios' />
-            <Typography className='mtb-5' variant="h5" component="div">
-                {titulo}
-            </Typography>
-            <Typography variant="body2">
-                {descrip}
-            </Typography>
-        </CardContent>
-        <CardActions>
-            <Button size="small" variant='outlined'>Leer Más<AiOutlineArrowRight className='ml-2' /></Button>
-        </CardActions>
-    </Card>
-  )
+const Service = ({titulo, descrip, icono}) => {
+    const { push } = useRouter();
+
+    const handleClick = () => {
+        push('/Soluciones');    
+    }
+
+    return (
+        <Card sx={{ minWidth: 275, maxWidth: 275 }} className='card-margen' >
+            <CardContent>
+                <div className='d-flex'>
+                    <Icon className='icono-servicios'>{icono}</Icon>
+                </div>
+                <Typography className='mtb-5' variant="h5" component="div">
+                    {titulo}
+                </Typography>
+                <Typography variant="body2">
+                    {descrip}
+                </Typography>
+            </CardContent>
+
+            <CardActions>
+                <Stack spacing={3} direction="row" className='mx-auto mb-4'>
+                    <ColorButton onClick={ handleClick } variant="contained" endIcon={<MdExpandMore className='ml-2' />}>Leer Más</ColorButton>
+                </Stack>
+            </CardActions>
+        </Card>
+    )
 }
 
 export default Service
