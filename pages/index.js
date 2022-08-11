@@ -1,13 +1,21 @@
 import Layout from '../components/Layout';
 import Navbar from '../components/Navbar';
-import Link from 'next/link'
-import {services, works} from '../lib/services'
+import { services, works } from '../lib/services'
 import Service from '../components/Service';
 import Work from '../components/Work';
-
+import { Stack} from '@mui/material';
+import { ColorButton } from '../lib/theme';
+import { useRouter } from 'next/router'
+import { MdExpandMore } from 'react-icons/md';
 
 const index = () => {
-  return (
+    const { push } = useRouter();
+
+    const handleSubmit = () => {
+        push('/Blog');    
+    }
+
+    return (
     <Layout>
         <header className='hero'>
             {/* Barra de navegación */}
@@ -21,9 +29,11 @@ const index = () => {
                 <p className="hero_texto">
                     Tu mejor aliado tecnológico.
                 </p>
-                <Link href="/">
-                    <a className="cta">Conocer más</a>
-                </Link>
+
+                <Stack spacing={3} direction="row">
+                    <ColorButton onClick={ handleSubmit } size='large' variant="contained" className='mx-auto mb-4' endIcon={<MdExpandMore className='ml-2' />}>Leer Más</ColorButton>
+                </Stack>
+
             </section>
         </header>
 
@@ -53,12 +63,13 @@ const index = () => {
                 <h1 className='servicios-titulo'>Servicios</h1>
                 <div className='tarjetas'>
                     {
-                        services.map(({titulo, descrip},i) =>{
+                        services.map(({titulo, descrip, icono},i) =>{
                             return(
                                 <Service
                                     key={i}
                                     titulo={titulo}
                                     descrip={descrip}
+                                    icono={icono}
                                 />
                             )
                         })
@@ -86,7 +97,7 @@ const index = () => {
             </section>                  
         </section>
     </Layout>
-  )
+    )
 }
 
 export default index
