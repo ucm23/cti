@@ -343,12 +343,12 @@ body::-webkit-scrollbar-thumb{
 }
 
 .card-img-top{
-    transform: scale(1);
-    transition: all 0.2s ease-in-out;
+    transform: scale(1) !important;
+    transition: all 0.2s ease-in-out !important;
 }
 
 .card-img-top:hover{
-    transform: scale(1.25);
+    transform: scale(1.25) !important;
 }
 
 .icono-servicios{
