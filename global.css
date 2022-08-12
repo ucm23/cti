@@ -16,6 +16,17 @@
     --color-gris-oscuro: #dfdbdb;
 }
 
+#nprogress .bar{
+    background: var(--color-naranja) !important;
+}
+
+#nprogress .spinner-icon{
+    /* border-top-color: #fff !important;
+    border-left-color: #fff !important; */
+    border-top-color: var(--color-naranja) !important;
+    border-left-color: var(--color-naranja) !important;
+}
+
 body{
     font-family: 'Roboto', sans-serif;
 }
@@ -391,13 +402,9 @@ body::-webkit-scrollbar-thumb{
 
 }
 
-.cliente6{
-    width: 350px;
-}
-
-.mx-15{
-    margin: 0 30px;
-}
+.cliente6{ width: 350px; }
+.mx-15{ margin: 0 30px; }
+.mx-10{ margin: 0 15px; }
 
 .clientes-titulo{
     text-align: center;
@@ -479,7 +486,7 @@ body::-webkit-scrollbar-thumb{
 .certificacion{
     width: 100%;
     height: 100vh;
-    min-height: 200px;
+    min-height: 575px;
     max-height: 575px;
     position: relative;
     color: #fff;
@@ -499,4 +506,46 @@ body::-webkit-scrollbar-thumb{
     background-size: cover;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     z-index: -1;
+}
+
+.cert1{ width: 15%; }
+.cert2{ width: 14%; }
+.cert3{ width: 17%; }
+.cert4{ width: 17%; }
+.cert5{ width: 30%; }
+.cert6{ width: 30%; }
+.cert7{ width: 30%; }
+
+.bg-white{
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.cert-center{
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.my-5{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.text-center{
+    text-align: center;
+    margin: 20px auto;
+    font-size: var(--font-titulos);
+}
+
+.containe{
+    height: 100%;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.mt-20{
+    margin-top: 50px;
 }
