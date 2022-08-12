@@ -1,6 +1,6 @@
 import Layout from '../components/Layout';
 import Navbar from '../components/Navbar';
-import { services, works } from '../lib/services'
+import { services, works, imgs } from '../lib/services'
 import Service from '../components/Service';
 import Work from '../components/Work';
 import { Stack} from '@mui/material';
@@ -95,6 +95,33 @@ const index = () => {
                     }
                 </div>
             </section>                  
+        </section>
+
+        {/* Carousel de clientes */}
+        <section>
+            <section className='containerWP d-flex flex-column'>
+                <h1 className='trabajos-titulo'>Nuestros Clientes</h1>
+                <h3>Ellos confian en la calidad de Grupo CTI Tech-IN POS</h3>
+                <div className="slider">
+                    <div className="slide-track">
+                        {
+                            imgs.map(({src, className},i)=>{
+                                return (
+                                    <div className='slide' key={i}>
+                                        <img className={className} src={src} alt={src} />
+                                    </div>
+                                )
+                            })
+                        }
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section>
+            <section className='containerWP'>
+                <h1 className='ml-2'>Nuestros Clientes</h1>
+            </section>
         </section>
     </Layout>
     )
