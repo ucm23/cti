@@ -58,7 +58,7 @@ body::-webkit-scrollbar-thumb{
     animation: SlideBG 15s linear infinite 0s;
     animation-timing-function: ease-in-out; 
     background-size: cover;
-    clip-path: polygon(0 0, 100% 0, 100% 87%, 0 87%);
+    clip-path: polygon(0 0, 100% 0, 100% 91%, 0 98%);
     z-index: -1;
 }
 
@@ -294,7 +294,7 @@ body::-webkit-scrollbar-thumb{
 /* ------------Servicios--------- */
 .bg-servicios{
     background-color: var(--color-gris-oscuro);
-    margin: 50px 0;
+    margin: 50px 0 30px 0;
 }
 
 .servi{
@@ -303,7 +303,12 @@ body::-webkit-scrollbar-thumb{
     padding-bottom: 40px;
 }
 
-.servicios-titulo,
+.servicios-titulo{
+    text-align: center;
+    font-size: var(--font-titulos);
+    margin: 70px auto 40px ;
+}
+
 .trabajos-titulo{
     text-align: center;
     font-size: var(--font-titulos);
@@ -394,6 +399,20 @@ body::-webkit-scrollbar-thumb{
     margin: 0 30px;
 }
 
+.clientes-titulo{
+    text-align: center;
+    font-size: var(--font-titulos);
+    margin: 0 auto;
+    color: var(--color-naranja-oscuro);
+}
+
+.clientes-subtitulo{
+    text-align: center;
+    font-size: var(--font-texto-normal);
+    margin: 25px auto;
+    color: var(--color-naranja-oscuro);
+}
+
 .slider {
 	background: white;
 	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
@@ -448,7 +467,7 @@ body::-webkit-scrollbar-thumb{
         -webkit-transform: translateX(0);
         transform: translateX(0);
     }
-    
+
     100% {
         -webkit-transform: translateX(calc(-250px * 7));
         transform: translateX(calc(-250px * 7));
