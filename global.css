@@ -338,6 +338,19 @@ body::-webkit-scrollbar-thumb{
     box-shadow: none !important;
 }
 
+.overhid{
+    overflow: hidden;
+}
+
+.card-img-top{
+    transform: scale(1);
+    transition: all 0.2s ease-in-out;
+}
+
+.card-img-top:hover{
+    transform: scale(1.25);
+}
+
 .icono-servicios{
     font-size: 3rem !important;
     color: var(--color-naranja-oscuro);
@@ -371,11 +384,11 @@ body::-webkit-scrollbar-thumb{
 }
 
 .pt-0{
-    padding-top: 0;
+    padding-top: 0 !important;
 }
 
 .font-work{
-    font-size: 2rem;
+    font-size: 2rem !important;
     color: var(--color-naranja-oscuro);
 }
 
