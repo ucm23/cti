@@ -16,12 +16,15 @@ const Work = ({titulo, src}) => {
     }
 
     return (
-            <Card sx={{ minWidth: 435, maxWidth: 435  }} className='card-margen'>
-                <CardMedia
-                    component="img"
-                    height="250"
-                    image={src}
-                    alt={src} />
+            <Card sx={{ minWidth: 435, maxWidth: 435  }} className='card-margen '>
+                <div className='overhid'>
+                    <CardMedia
+                        component="img"
+                        height="250"
+                        image={src}
+                        alt={src}
+                        className='card-img-top' />
+                </div>
                 <CardContent className='d-flex'>
                     <Typography gutterBottom variant="h5" component="div" className='m-auto font-work'>
                         {titulo}
