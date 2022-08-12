@@ -1,6 +1,6 @@
 import Layout from '../components/Layout';
 import Navbar from '../components/Navbar';
-import { services, works, imgs } from '../lib/services'
+import { services, works, imgs, cert } from '../lib/services'
 import Service from '../components/Service';
 import Work from '../components/Work';
 import { Stack} from '@mui/material';
@@ -118,9 +118,18 @@ const index = () => {
                 </section>
             </section>
 
-            <section className='certificacion'>
-                <section >
-                    <h1>Nuestras Certificaciones</h1>
+            <section className='certificacion mt-20'>
+                <section className='d-flex cert-center flex-column containe'>
+                    <h1 className='text-center'>Nuestras Certificaciones</h1>
+                    <div className='d-flex cert-center'>
+                        {
+                            cert.map(({src, className},i) => {
+                                return (
+                                    <img key={i} className={className} src={src} alt={src} />
+                                )
+                            })
+                        }
+                    </div>
                 </section>
             </section>
         </Layout>
