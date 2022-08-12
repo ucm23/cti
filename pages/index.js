@@ -100,8 +100,8 @@ const index = () => {
         {/* Carousel de clientes */}
         <section>
             <section className='containerWP d-flex flex-column'>
-                <h1 className='trabajos-titulo'>Nuestros Clientes</h1>
-                <h3>Ellos confian en la calidad de Grupo CTI Tech-IN POS</h3>
+                <h1 className='clientes-titulo'>Nuestros Clientes</h1>
+                <h3 className='clientes-subtitulo'>Ellos confian en la calidad de Grupo CTI Tech-IN POS</h3>
                 <div className="slider">
                     <div className="slide-track">
                         {
