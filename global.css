@@ -242,6 +242,7 @@ body::-webkit-scrollbar-thumb{
     border-radius: 4px 0 0 4px;
     border-bottom: 5px solid var(--color-naranja-oscuro);
     filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.281));
+    overflow: hidden;
 }
 
 .bienvenida_titulo,
@@ -279,6 +280,7 @@ body::-webkit-scrollbar-thumb{
     border-bottom: 5px solid var(--color-naranja-oscuro);
     filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.281));
     border-radius: var(--border-radius);
+    overflow: hidden;
 }
 
 .year-title{
