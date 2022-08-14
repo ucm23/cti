@@ -7,6 +7,7 @@ import { ColorButton } from '../lib/theme';
 import { Stack } from '@mui/material';
 import { MdExpandMore } from 'react-icons/md';
 import { useRouter } from 'next/router'
+import { Fade } from "react-awesome-reveal";
 
 const Work = ({titulo, src}) => {
     const { push } = useRouter();
@@ -18,12 +19,14 @@ const Work = ({titulo, src}) => {
     return (
             <Card sx={{ minWidth: 435, maxWidth: 435  }} className='card-margen '>
                 <div className='overhid'>
-                    <CardMedia
-                        component="img"
-                        height="250"
-                        image={src}
-                        alt={src}
-                        className='card-img-top' />
+                    <Fade direction="down">
+                        <CardMedia
+                            component="img"
+                            height="250"
+                            image={src}
+                            alt={src}
+                            className='card-img-top' />
+                    </Fade>
                 </div>
                 <CardContent className='d-flex'>
                     <Typography gutterBottom variant="h5" component="div" className='m-auto font-work'>

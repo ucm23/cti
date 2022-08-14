@@ -1,12 +1,13 @@
 import Layout from '../components/Layout';
 import Navbar from '../components/Navbar';
-import { services, works, imgs, cert } from '../lib/services'
 import Service from '../components/Service';
 import Work from '../components/Work';
+import { services, works, imgs, cert } from '../lib/services'
 import { Stack} from '@mui/material';
 import { ColorButton } from '../lib/theme';
 import { useRouter } from 'next/router'
 import { MdExpandMore } from 'react-icons/md';
+import { Fade } from "react-awesome-reveal";
 
 const index = () => {
     const { push } = useRouter();
@@ -23,12 +24,16 @@ const index = () => {
 
                 {/* Encabezado */}
                 <section className="hero_container container">
-                    <h1 className="hero_title">
-                        Grupo CTI<br />Tech-IN POS
-                    </h1>
-                    <p className="hero_texto">
-                        Tu mejor aliado tecnológico.
-                    </p>
+                    <Fade direction="left">
+                        <h1 className="hero_title">
+                            Grupo CTI<br />Tech-IN POS
+                        </h1>
+                    </Fade>
+                    <Fade direction="right">
+                        <p className="hero_texto">
+                            Tu mejor aliado tecnológico.
+                        </p>
+                    </Fade>
 
                     <Stack spacing={3} direction="row">
                         <ColorButton onClick={ handleSubmit } size='large' variant="contained" className='mx-auto mb-4' endIcon={<MdExpandMore className='ml-2' />}>Leer Más</ColorButton>
@@ -41,8 +46,10 @@ const index = () => {
             <section>
                 <section className='containerWP'>
                     <div className='bienvenida'>
-                        <h1 className='bienvenida_titulo'>Bienvenidos</h1>
-                        <p className='bienvenida_texto'>Grupo CTI Tech-IN POS es una empresa que se creo en el año 2001 con el objetivo de vender Hardware, Software y Servicios de Tecnología, ofrecemos un servicio y atención personalizada acorde a las necesidades de nuestros clientes, con una oferta competitiva y de valor en conjunto con nuestros socios de negocios.</p>    
+                        <Fade direction="right">
+                            <h1 className='bienvenida_titulo'>Bienvenidos</h1>
+                            <p className='bienvenida_texto'>Grupo CTI Tech-IN POS es una empresa que se creo en el año 2001 con el objetivo de vender Hardware, Software y Servicios de Tecnología, ofrecemos un servicio y atención personalizada acorde a las necesidades de nuestros clientes, con una oferta competitiva y de valor en conjunto con nuestros socios de negocios.</p>    
+                        </Fade>
                     </div>
                     <img 
                         className='img_bienvenida'
@@ -50,8 +57,10 @@ const index = () => {
                         alt='Bienvenida al grupo CTI' />
                     <div className='years'>
                         <div className='year'>
-                            <h1 className='year-title'>12</h1>
-                            <p className='year-text'>Años de experiencia</p>
+                            <Fade direction="left">
+                                <h1 className='year-title'>12</h1>
+                                <p className='year-text'>Años de experiencia</p>
+                            </Fade>
                         </div>
                     </div>
                 </section>
