@@ -27,7 +27,7 @@ const Layout = ({children}) => {
     return (
       <>  
           <Head>
-              <title>CTI </title>
+              <title>CTI</title>
           </Head>
           <main>
               {children}
