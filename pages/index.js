@@ -8,6 +8,7 @@ import { ColorButton } from '../lib/theme';
 import { useRouter } from 'next/router'
 import { MdExpandMore } from 'react-icons/md';
 import { Fade } from "react-awesome-reveal";
+import Footer from '../components/Footer';
 
 const index = () => {
     const { push } = useRouter();
@@ -69,7 +70,9 @@ const index = () => {
             {/* Servicios */}
             <section className='bg-servicios'>
                 <section className='containerWP servi'>
-                    <h1 className='servicios-titulo'>Servicios</h1>
+                    <h1 className='servicios-titulo'>
+                        Servicios
+                    </h1>
                     <div className='tarjetas'>
                         {
                             services.map(({titulo, descrip, icono},i) =>{
@@ -141,6 +144,8 @@ const index = () => {
                     </div>
                 </section>
             </section>
+
+            <Footer />
         </Layout>
     )
 }
