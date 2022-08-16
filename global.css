@@ -794,6 +794,7 @@ body::-webkit-scrollbar-thumb{
     margin-top: 75px;
     margin-bottom: 75px;
     display: flex;
+    
 }
 
 .bloques-mis{

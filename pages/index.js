@@ -53,7 +53,7 @@ const index = () => {
             <section>
                 <section className='containerWP p-10'>
                     <div className='bienvenida'>
-                        <Fade direction="right">
+                        <Fade direction="left">
                             <h1 className='bienvenida_titulo'>Bienvenidos</h1>
                             <p className='bienvenida_texto'>Grupo CTI Tech-IN POS es una empresa que se creo en el año 2001 con el objetivo de vender Hardware, Software y Servicios de Tecnología, ofrecemos un servicio y atención personalizada acorde a las necesidades de nuestros clientes, con una oferta competitiva y de valor en conjunto con nuestros socios de negocios.</p>    
                         </Fade>

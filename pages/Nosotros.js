@@ -40,14 +40,18 @@ const Nosotros = () => {
 
             <section className='mis-vis'>
                 <section className='bloques-mis'>
-                    <div className='vis'>
-                        <h1>Visión</h1>
-                        <p> Ser el aliado estratégico en Tecnología, que nos permita posicionarnos como el principal referente en soluciones IT y ciberseguridad en México, Estados Unidos, Centro y Sur de América.</p>
-                    </div>
-                    <div className='mis'>
-                        <h1>Misión</h1>
-                        <p>Creamos relaciones de confianza y profesionalismo que nos permite pensar como un solo equipo entre nuestros colaboradores, clientes, socios, mayoristas y fabricantes para contribuir en la innovación y desarrollo tecnológico.</p>
-                    </div>
+                    <Fade direction="down">
+                        <div className='vis'>
+                            <h1>Visión</h1>
+                            <p> Ser el aliado estratégico en Tecnología, que nos permita posicionarnos como el principal referente en soluciones IT y ciberseguridad en México, Estados Unidos, Centro y Sur de América.</p>
+                        </div>
+                    </Fade>
+                    <Fade direction="up">
+                        <div className='mis'>
+                            <h1>Misión</h1>
+                            <p>Creamos relaciones de confianza y profesionalismo que nos permite pensar como un solo equipo entre nuestros colaboradores, clientes, socios, mayoristas y fabricantes para contribuir en la innovación y desarrollo tecnológico.</p>
+                        </div>
+                    </Fade>
                 </section>
             </section>
 
