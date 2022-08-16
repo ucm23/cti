@@ -51,7 +51,7 @@ const index = () => {
 
             {/* Bienvenida */}
             <section>
-                <section className='containerWP'>
+                <section className='containerWP p-10'>
                     <div className='bienvenida'>
                         <Fade direction="right">
                             <h1 className='bienvenida_titulo'>Bienvenidos</h1>
