@@ -16,6 +16,11 @@
     --color-gris-oscuro: #dfdbdb;
 }
 
+::selection {
+    color: #fff;
+    background: #f1600c;
+}
+
 #nprogress .bar{
     background: var(--color-naranja) !important;
 }
@@ -267,7 +272,7 @@ body::-webkit-scrollbar-thumb{
 
 
 .img_bienvenida{
-    width: 40%;
+    /* width: 40%; */
     border-radius: var(--border-radius);
 }
 
@@ -657,4 +662,105 @@ body::-webkit-scrollbar-thumb{
 .footer-cen{
     display: flex !important;
     align-items: center !important;
+}
+
+.about{
+    width: 100%;
+    min-height: 550px;
+    max-height: 800px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    color: #fff;
+}
+
+.about::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    animation: SlideB 15s linear infinite 0s;
+    animation-timing-function: ease-in-out; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    clip-path: polygon(0 0, 100% 0, 100% 91%, 0 98%);
+    z-index: -1;
+}
+
+@keyframes SlideB{
+
+    0% {
+        background: url('/banner2.jpg');
+	    background-color: var(--color-animacion);
+        background-blend-mode: soft-light;
+        background-attachment: fixed;
+    }
+
+    50% {
+        background: url('/abo.jpg');
+	    background-color: var(--color-animacion);
+        background-blend-mode: soft-light;
+        background-attachment: fixed;
+    }
+
+    75% {
+        background: url('/banner2.jpg');
+	    background-color: var(--color-animacion);
+        background-blend-mode: soft-light;
+        background-attachment: fixed;
+    }
+
+    100% {
+        background: url('/abo.jpg');
+	    background-color: var(--color-animacion);
+        background-attachment: fixed;
+        background-blend-mode: soft-light;
+    }
+
+    75% {
+        background: url('/banner2.jpg') ;
+	    background-color: var(--color-animacion);
+        background-blend-mode: soft-light;
+        background-attachment: fixed;
+    }
+
+    50% {
+        background: url('/abo.jpg');
+	    background-color: var(--color-animacion);
+        background-attachment: fixed;
+        background-blend-mode: soft-light;
+    }
+
+    25% {
+        background: url('/banner2.jpg');
+	    background-color: var(--color-animacion);
+        background-attachment: fixed;
+        background-blend-mode: soft-light;
+    }
+
+    0% {
+        background: url('/abo.jpg') ;
+	    background-color: var(--color-animacion);
+        background-attachment: fixed;
+        background-blend-mode: soft-light;
+
+    }
+}
+
+.nosotros-texto{
+    width: 60%;
+}
+
+.nosotros{
+    display: flex;
+    max-width: 1200%;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.bg-nosotros{
+    height: 500px;
 }
