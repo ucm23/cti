@@ -82,7 +82,7 @@ const Footer = () => {
 
                 <div className='footer-derechos'>
                     <p>© { new Date().getFullYear() } Grupo CTI Tech-IN POS. Todos los derechos reservados.</p>
-                    <p>Politica de privacidad</p>
+                    <p>Política de privacidad</p>
                 </div>
             </section>
         </section>
