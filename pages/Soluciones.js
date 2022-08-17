@@ -27,7 +27,7 @@ const Soluciones = () => {
 
           <section className="contenedor">
               {
-                serv.map(({t1, p1, a1, img1, t2, p2, a2, img2}, i) => {
+                serv.map(({t1, p1, a1, img1, clase}, i) => {
                   return (
                     <Servicio
                         key={i}
@@ -35,10 +35,7 @@ const Soluciones = () => {
                         p1={p1}
                         a1={a1}
                         img1={img1}
-                        t2={t2}
-                        p2={p2}
-                        a2={a2}
-                        img2={img2}
+                        clase={clase}
                     />
                   )
                 })
