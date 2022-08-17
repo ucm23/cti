@@ -17,28 +17,29 @@ const Work = ({titulo, src}) => {
     }
 
     return (
-        <Card sx={{ minWidth: 435, maxWidth: 435  }} className='card-margen '>
-            <div className='overhid'>
-                <Fade direction="down">
-                    <CardMedia
-                        component="img"
-                        height="250"
-                        image={src}
-                        alt={src}
-                        className='card-img-top' />
-                </Fade>
-            </div>
-            <CardContent className='d-flex'>
-                <Typography gutterBottom variant="h5" component="div" className='m-auto font-work'>
-                    {titulo}
-                </Typography>
-            </CardContent>
-            <CardActions className='pt-0'>
-                <Stack spacing={3} direction="row" className='mx-auto mb-4'>
-                    <ColorButton onClick={handleClick} variant="contained" endIcon={<MdExpandMore className='ml-2' />}>Leer Más</ColorButton>
-                </Stack>
-            </CardActions>
-        </Card>
+        <Fade direction="left">
+            <Card sx={{ minWidth: 435, maxWidth: 435  }} className='card-margen '>
+                <div className='overhid'>
+                        <CardMedia
+                            component="img"
+                            height="250"
+                            image={src}
+                            alt={src}
+                            className='card-img-top' />
+                    
+                </div>
+                <CardContent className='d-flex'>
+                    <Typography gutterBottom variant="h5" component="div" className='m-auto font-work'>
+                        {titulo}
+                    </Typography>
+                </CardContent>
+                <CardActions className='pt-0'>
+                    <Stack spacing={3} direction="row" className='mx-auto mb-4'>
+                        <ColorButton onClick={handleClick} variant="contained" endIcon={<MdExpandMore className='ml-2' />}>Leer Más</ColorButton>
+                    </Stack>
+                </CardActions>
+            </Card>
+        </Fade>
     )
 }
 
