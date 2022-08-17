@@ -864,6 +864,10 @@ body::-webkit-scrollbar-thumb{
     padding: 35px;
 }
 
+.reverse{
+    flex-direction: row-reverse;
+}
+
 .servicio img{
     border-radius: 6px;
     width: 40%;
