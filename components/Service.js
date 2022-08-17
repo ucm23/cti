@@ -17,30 +17,27 @@ const Service = ({titulo, descrip, icono}) => {
     }
 
     return (
-        <Card sx={{ minWidth: 275, maxWidth: 275 }} className='card-margen'>
-            <CardContent>
-                <Fade direction="down">
+        <Fade direction="right">
+            <Card sx={{ minWidth: 275, maxWidth: 275 }} className='card-margen'>
+                <CardContent>
                     <div className='d-flex'>
                         <Icon className='icono-servicios'>{icono}</Icon>
                     </div>
-                </Fade>
-                <Fade direction="left">
+
                     <Typography className='mtb-5' variant="h5" component="div">
                         {titulo}
                     </Typography>
                     <Typography variant="body2">
                         {descrip}
                     </Typography>
-                </Fade>
-            </CardContent>
-            <Fade direction="up">
+                </CardContent>
                 <CardActions>
                     <Stack spacing={3} direction="row" className='mx-auto mb-4'>
                         <ColorButton onClick={ handleClick } variant="contained" endIcon={<MdExpandMore className='ml-2' />}>Leer Más</ColorButton>
                     </Stack>
                 </CardActions>
-            </Fade>
-        </Card>
+            </Card>
+        </Fade>
     )
 }
 
