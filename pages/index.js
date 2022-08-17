@@ -1,6 +1,5 @@
 import Layout from '../components/Layout';
 import Navbar from '../components/Navbar';
-/* import Service from '../components/Service'; */
 import Work from '../components/Work';
 import { services, works, imgs, cert } from '../lib/services'
 import { Stack} from '@mui/material';
