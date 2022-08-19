@@ -9,7 +9,7 @@ import { MdExpandMore } from 'react-icons/md';
 import { useRouter } from 'next/router'
 import { Fade } from "react-awesome-reveal";
 
-const Work = ({titulo, src}) => {
+const Work = ({titulo, src, alt}) => {
     const { push } = useRouter();
 
     const handleClick = () => {
@@ -24,7 +24,7 @@ const Work = ({titulo, src}) => {
                             component="img"
                             height="250"
                             image={src}
-                            alt={src}
+                            alt={alt}
                             className='card-img-top' />
                     
                 </div>
