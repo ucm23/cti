@@ -68,8 +68,8 @@ const Footer = () => {
                             <a target='_blank' className='footer-cen'><FaPhoneSquareAlt className='block4-icon' /><p>811 588 03 05</p></a>
                         </Link>
 
-                        <Link href='!#'>
-                            <a target='_blank' className='footer-cen'>
+                        <Link href='/Contacto'>
+                            <a className='footer-cen'>
                                 <MdLocationOn className='block4-icon' />
                                 <div className=''>
                                     <p>Av. Ejército Nacional 769, 769, piso</p> 
