@@ -103,12 +103,13 @@ const index = () => {
                     <h1 className='trabajos-titulo'>Trabajos Recientes</h1>
                     <div className='tarjetas'>
                         {
-                            works.map(({titulo, src}, i) => {
+                            works.map(({titulo, src, alt}, i) => {
                                 return ( 
                                     <Work
                                         key={i}
                                         titulo={titulo}
-                                        src={src}/>
+                                        src={src}
+                                        alt={alt} />
                                 )
                             })
                         }
@@ -124,10 +125,10 @@ const index = () => {
                     <div className="slider">
                         <div className="slide-track">
                             {
-                                imgs.map(({src, className},i)=>{
+                                imgs.map(({src, className, alt},i)=>{
                                     return (
                                         <div className='slide' key={i}>
-                                            <img className={className} src={src} alt={src} />
+                                            <img className={className} src={src} alt={alt} />
                                         </div>
                                     )
                                 })
@@ -142,9 +143,9 @@ const index = () => {
                     <h1 className='text-center'>Nuestras Certificaciones</h1>
                     <div className='d-flex cert-center'>
                         {
-                            cert.map(({src, className},i) => {
+                            cert.map(({src, className, alt},i) => {
                                 return (
-                                    <img key={i} className={className} src={src} alt={src} />
+                                    <img key={i} className={className} src={src} alt={alt} />
                                 )
                             })
                         }
