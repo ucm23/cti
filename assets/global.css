@@ -683,7 +683,6 @@ body::-webkit-scrollbar-thumb{
     left: 0;
     width: 100%;
     height: 100%;
-    
     animation: SlideB 15s linear infinite 0s;
     animation-timing-function: ease-in-out; 
     background-size: cover;
@@ -825,7 +824,8 @@ body::-webkit-scrollbar-thumb{
 
 /* soluciones */
 
-.soluciones-header{
+.soluciones-header,
+.contacto-header{
     width: 100%;
     min-height: 550px;
     max-height: 800px;
@@ -836,13 +836,21 @@ body::-webkit-scrollbar-thumb{
 }
 
 .soluciones-header::before{
+    background: url('/page-title-bg-2.jpg');
+}
+
+.contacto-header::before{
+    background: url('/banner-bg.jpg');
+}
+
+.soluciones-header::before,
+.contacto-header::before{
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('/page-title-bg-2.jpg');
     background-color: var(--color-animacion);
     background-blend-mode: soft-light;
     background-attachment: fixed; 
@@ -890,4 +898,13 @@ body::-webkit-scrollbar-thumb{
 .decoration-none{
     text-decoration: none;
     color: #fff;
+}
+
+.leaflet-container{
+    width: 100%;
+    height: 450px;
+}
+
+.leaflet-control-attribution{
+    visibility: hidden !important;
 }
