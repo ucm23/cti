@@ -15,19 +15,15 @@ const Soluciones = () => {
               {/* Encabezado */}
               <section className="hero_container container">
                   <Fade direction="right">
-                      <h1 className="hero_title">
-                          Soluciones
-                      </h1>
-                      <p className="hero_texto">
-                          Conoce todos nuestros servicios
-                      </p>
+                      <h1 className="hero_title">Soluciones</h1>
+                      <p className="hero_texto">Conoce todos nuestros servicios</p>
                   </Fade>
               </section>
           </header>
 
-          <section className="contenedor">
+          <section className="contenedor overhid">
               {
-                serv.map(({t1, p1, a1, img1, clase}, i) => {
+                serv.map(({t1, p1, a1, img1, clase, direction}, i) => {
                   return (
                     <Servicio
                         key={i}
@@ -36,6 +32,7 @@ const Soluciones = () => {
                         a1={a1}
                         img1={img1}
                         clase={clase}
+                        direction={direction}
                     />
                   )
                 })
