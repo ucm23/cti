@@ -1,5 +1,10 @@
 import { Html, Head, Main, NextScript } from 'next/document'
 
+/**
+ * The Document component is a wrapper around the HTML document that Next.js generates. It allows you
+ * to customize the content of the document
+ * returns The return value of the function is a React element.
+ */
 export default function Document() {
   return (
     <Html>
