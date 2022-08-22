@@ -40,7 +40,7 @@ body::-webkit-scrollbar{
 
 body::-webkit-scrollbar-thumb{
     background: var(--color-naranja);
-    border-radius: 45px;
+    border-radius: 4px;
 }
 
 .container{
@@ -50,7 +50,9 @@ body::-webkit-scrollbar-thumb{
     overflow: hidden;
     padding: var(--padding-container);
 }
-
+.logo_cti{
+    width: 13%;
+}
 .hero{
     width: 100%;
     height: 100vh;
@@ -185,6 +187,13 @@ body::-webkit-scrollbar-thumb{
 
 .nav_close{
     display: var(--show, none);
+}
+
+.nav_logo{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
 }
 
 /* -----------Encabezado------------ */
@@ -907,4 +916,40 @@ body::-webkit-scrollbar-thumb{
 
 .leaflet-control-attribution{
     visibility: hidden !important;
+}
+
+.my-25{
+    margin: 4% 0;
+}
+
+.titulo-diferencia{
+    font-size: 2.2rem;
+    color: var(--color-naranja-oscuro);
+}
+
+.diferencia{
+    text-align: center;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.texto-diferencia{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.icon-dif{
+    font-size: 3.5rem;
+}
+
+.p-dif{
+    padding: 10px;
+    width: 290px;
+}
+
+.p-dif p{
+    line-height: 1.8;
 }
