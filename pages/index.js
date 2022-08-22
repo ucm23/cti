@@ -1,15 +1,15 @@
+import { services, works, imgs, cert } from '../lib/services'
+import { MdExpandMore } from 'react-icons/md';
+import { Fade } from "react-awesome-reveal";
+import { ColorButton } from '../lib/theme';
+import { useRouter } from 'next/router'
+import { Stack} from '@mui/material';
+import { Suspense } from 'react'
 import Layout from '../components/Layout';
 import Navbar from '../components/Navbar';
 import Work from '../components/Work';
-import { services, works, imgs, cert } from '../lib/services'
-import { Stack} from '@mui/material';
-import { ColorButton } from '../lib/theme';
-import { useRouter } from 'next/router'
-import { MdExpandMore } from 'react-icons/md';
-import { Fade } from "react-awesome-reveal";
 import Footer from '../components/Footer';
 import dynamic from 'next/dynamic'
-import { Suspense } from 'react'
 
 const Service = dynamic(() => import('../components/Service'), {
     suspense: true,
@@ -18,7 +18,7 @@ const Service = dynamic(() => import('../components/Service'), {
 const index = () => {
     const { push } = useRouter();
 
-    const handleSubmit = () => {
+    const handleClick = () => {
         push('/Blog');    
     }
 
@@ -42,7 +42,7 @@ const index = () => {
                     </Fade>
 
                     <Stack spacing={3} direction="row">
-                        <ColorButton onClick={ handleSubmit } size='large' variant="contained" className='mx-auto mb-4' endIcon={<MdExpandMore className='ml-2' />}>Leer Más</ColorButton>
+                        <ColorButton onClick={ handleClick } size='large' variant="contained" className='mx-auto mb-4' endIcon={<MdExpandMore className='ml-2' />}>Leer Más</ColorButton>
                     </Stack>
 
                 </section>
