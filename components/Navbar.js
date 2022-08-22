@@ -5,9 +5,12 @@ const Navbar = () => {
     return (
         <Fade direction="down">
             <nav className="nav container">
-                <div className="nav_logo">
-                    <p className="nav_title">Grupo CTI</p>
-                </div>
+                <Link href="/">
+                <a className="nav_logo">
+                    <img className='logo_cti' src='logo.png' alt='Logo grupo CTI TECH_IN POS' />
+                    <p className="nav_title"> Grupo CTI</p>
+                </a>
+                </Link>
 
                 <ul className="nav_link nav_link_menu">
                     <li className="nav_items">
