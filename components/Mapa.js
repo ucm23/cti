@@ -2,11 +2,12 @@ import { MapContainer,TileLayer,Marker,Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 
 const position = [19.4406049398052, -99.19983385061217];
+const center = [19.4406049398052, -99.19853385061217];
 
 const Mapa = () => {
     return (
         <MapContainer
-            center={position}
+            center={center}
             zoom={17}
             scrollWheelZoom={false}
         >
