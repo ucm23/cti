@@ -25,6 +25,7 @@ const Contacto = () => {
             </section>
         </header>
 
+        <h1 className="titulo_mapa">Nos Ubicamos en</h1>
         <section className="area-mapa contenedor">
             <Mapa />
             <div className="area-contacto">
