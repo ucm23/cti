@@ -10,7 +10,6 @@ import Navbar from '../components/Navbar';
 import Work from '../components/Work';
 import Footer from '../components/Footer';
 import dynamic from 'next/dynamic'
-
 const Service = dynamic(() => import('../components/Service'), {
     suspense: true,
 })
@@ -121,7 +120,7 @@ const index = () => {
             <section>
                 <section className='containerWP d-flex flex-column'>
                     <h1 className='clientes-titulo'>Nuestros Clientes</h1>
-                    <h3 className='clientes-subtitulo'>Ellos confian en la calidad de Grupo CTI Tech-IN POS</h3>
+                    <h3 className='clientes-subtitulo'>Ellos confian en la cálidad de Grupo CTI Tech-IN POS</h3>
                     <div className="slider">
                         <div className="slide-track">
                             {
