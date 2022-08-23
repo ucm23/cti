@@ -6,8 +6,8 @@ import { useEffect } from 'react';
 const Layout = ({children}) => {
   
     const router = useRouter();
-    useEffect(() => {
 
+    useEffect(() => {
         const handleRouteChange = (url) => {
             console.log(url);
             NProgress.start();
@@ -21,7 +21,6 @@ const Layout = ({children}) => {
         return () =>{
             router.events.off('routeChangeStart', handleRouteChange);
         }
-
     }, [])
 
     return (
