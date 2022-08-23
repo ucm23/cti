@@ -934,6 +934,12 @@ body::-webkit-scrollbar-thumb{
     font-size: 2.3rem;
 }
 
+.titulo_mapa{
+    text-align: center;
+    color: var(--color-naranja-oscuro);
+    font-size: var(--font-titulos);
+}
+
 .contacto1{
     display: flex;
     justify-content: center;
