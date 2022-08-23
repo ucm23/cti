@@ -28,6 +28,7 @@ const Layout = ({children}) => {
       <>  
           <Head>
               <title>Grupo CTI</title>
+              <link rel="icon" type="image/x-icon" href="/ico.ico"></link>
           </Head>
           <main>
               {children}
