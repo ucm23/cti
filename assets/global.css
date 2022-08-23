@@ -881,18 +881,14 @@ body::-webkit-scrollbar-thumb{
     padding: 35px;
 }
 
-.reverse{
-    flex-direction: row-reverse;
-}
+.reverse{ flex-direction: row-reverse; }
 
 .servicio img{
     border-radius: 6px;
     width: 40%;
 }
 
-.servicio-texto{
-    padding: 20px;
-}
+.servicio-texto{ padding: 20px; }
 .servicio-texto h1{
     color: var(--color-naranja-oscuro);
     text-align: center;
@@ -909,18 +905,65 @@ body::-webkit-scrollbar-thumb{
     color: #fff;
 }
 
-.leaflet-container{
-    width: 100%;
+/* mapa */
+
+.area-mapa{
     height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
 }
 
-.leaflet-control-attribution{
-    visibility: hidden !important;
+.contacto-cont{
+    height: 100%;
+    width: 150%;
+    background: #F4F4F4;
+    filter: drop-shadow(0 0 0.35rem rgba(0, 0, 0, 0.281));
+    border-radius: 5px;
+    position: relative;
+    right: 120px;
+    z-index: 2;
+    padding: 20px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
-.my-25{
-    margin: 4% 0;
+.contacto_ico{
+    font-size: 2.3rem;
 }
+
+.contacto1{
+    display: flex;
+}
+
+.contacto_logo{
+    width: 15%;
+}
+
+.contacto_texto{
+    width: 85%;
+}
+
+.leaflet-container{
+    width: 82%;
+    height: 100%;
+    border-radius: 10px;
+    filter: drop-shadow(0 0 0.45rem rgba(0, 0, 0, 0.281));
+}
+
+.area-contacto{ 
+    width: 18%;
+    height: 85%;
+}
+
+.contacto_HiLocationMarker{ color: #f7199a; }
+.contacto_HiMail{ color: #2888f5; }
+.contacto_HiPhoneOutgoing { color: #0c992a;}
+
+.leaflet-control-attribution{  visibility: hidden !important; }
+.my-25{ margin: 4% 0; }
 
 .titulo-diferencia{
     font-size: 2.2rem;
@@ -941,9 +984,7 @@ body::-webkit-scrollbar-thumb{
     flex-wrap: wrap;
 }
 
-.icon-dif{
-    font-size: 3.5rem;
-}
+.icon-dif{ font-size: 3.5rem; }
 
 .p-dif{
     padding: 10px;
