@@ -8,7 +8,7 @@ const Formulario = () => {
 
 	const [formularioenviado, setformularioenviado] = useState(false);
 
-	const sendEmail = () => {
+	const sendEmail = () =>{
 		emailjs.sendForm('service_f8cxw7w','template_84xbcfa', form.current, '3TkCFtArpfX95oASO')
 			.then(response => console.log(response))
 			.catch(er => console.log(er))
@@ -39,13 +39,13 @@ const Formulario = () => {
 				return errores;
 			}}
 
-			onSubmit={ ({resetForm}) =>{
+			onSubmit={(valores, {resetForm})=>{
 				sendEmail();
+				resetForm()
 				setformularioenviado(true);
 				setTimeout(()=>{
 					setformularioenviado(false)
 				}, 4000)
-				resetForm()
 			}}
 		>
 			{({values,errors, touched, handleSubmit, handleChange, handleBlur})=>(
