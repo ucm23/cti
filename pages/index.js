@@ -3,7 +3,7 @@ import { MdExpandMore } from 'react-icons/md';
 import { Fade } from "react-awesome-reveal";
 import { ColorButton } from '../lib/theme';
 import { useRouter } from 'next/router'
-import { Stack} from '@mui/material';
+import { Stack } from '@mui/material';
 import { Suspense } from 'react'
 import Layout from '../components/Layout';
 import Navbar from '../components/Navbar';
