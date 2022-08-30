@@ -283,6 +283,7 @@ body::-webkit-scrollbar-thumb{
 .img_bienvenida{
     width: 40%;
     border-radius: var(--border-radius);
+    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.281));
 }
 
 .year{
