@@ -1031,7 +1031,7 @@ body::-webkit-scrollbar-thumb{
 .formulario label {
 	display: block;
 	font-weight: 600;
-	font-size: 14px;
+	font-size: 16px;
 	margin-bottom: 5px;
 	color: #1f1f1f;
 }
@@ -1043,7 +1043,7 @@ body::-webkit-scrollbar-thumb{
 	border-radius: 5px;
 	border: 2px solid #e2e2e2;
 	font-size: 18px;
-	padding: 10px;
+	padding: 11px;
 	margin-bottom: 5px;
 	color: #1f1f1f;
 }
@@ -1105,4 +1105,8 @@ body::-webkit-scrollbar-thumb{
 	font-size: 14px;
 	padding-top: 20px;
 	color: #129212;
+}
+
+.correo-tel{
+    width: 48%;
 }
