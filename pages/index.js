@@ -8,8 +8,11 @@ import { Suspense } from 'react'
 import Layout from '../components/Layout';
 import Navbar from '../components/Navbar';
 import Work from '../components/Work';
-import Footer from '../components/Footer';
 import dynamic from 'next/dynamic'
+
+const Footer = dynamic(() => import('../components/Footer'), {
+    suspense: true,
+})
 const Service = dynamic(() => import('../components/Service'), {
     suspense: true,
 })
@@ -151,8 +154,10 @@ const index = () => {
                     </div>
                 </section>
             </section>
-
-            <Footer />
+            
+            <Suspense fallback={`Loading...`}>
+                <Footer />
+            </Suspense>
         </Layout>
     )
 }
