@@ -58,6 +58,7 @@ const Formulario = () => {
 							id='nombre' 
 							name='nombre' 
 							placeholder='Nombre'
+							autoComplete='off'
 							value={values.nombre}
 							onChange={handleChange}
 							onBlur={handleBlur} />
@@ -68,8 +69,9 @@ const Formulario = () => {
 						<input 
 							type='text' 
 							id='correo' 
-							name='correo' 
-							placeholder='micorreo@dominio.com'
+							name='correo'
+							autoComplete='off'
+							placeholder='micorreo@mail.com'
 							value={values.correo}
 							onChange={handleChange}
 							onBlur={handleBlur} />
