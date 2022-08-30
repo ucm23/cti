@@ -3,7 +3,7 @@ import { Fade } from 'react-awesome-reveal'
 import { GoCloudDownload } from 'react-icons/go'
 import { ColorButton } from '../lib/theme'
 
-const Servicio = ({t1, p1, a1, img1, clase, direction}) => {
+const Servicio = ({t1, p1, a1, img1, clase, direction, alt}) => {
     return (
         <Fade direction={direction}>
             <section className={clase}>
@@ -17,7 +17,7 @@ const Servicio = ({t1, p1, a1, img1, clase, direction}) => {
                         </Stack>
                     </a>
                 </section>
-                <img src={img1} />
+                <img src={img1} alt={alt} />
             </section>
         </Fade>
     )
