@@ -41,11 +41,11 @@ const Formulario = () => {
 
 			onSubmit={ ({resetForm}) =>{
 				sendEmail();
-				resetForm()
 				setformularioenviado(true);
 				setTimeout(()=>{
 					setformularioenviado(false)
 				}, 4000)
+				resetForm()
 			}}
 		>
 			{({values,errors, touched, handleSubmit, handleChange, handleBlur})=>(
