@@ -4,6 +4,7 @@ import Layout from "../components/Layout";
 import Navbar from "../components/Navbar";
 import dynamic from 'next/dynamic';
 import { HiLocationMarker, HiMail, HiPhoneOutgoing } from 'react-icons/hi'
+import Formulario from "../components/Formulario";
 
 const Mapa = dynamic(() => import("../components/Mapa"),{ 
     ssr: false 
@@ -71,6 +72,12 @@ const Contacto = () => {
                     </div>
                 </div>
             </div>
+        </section>
+
+        <section className="contenedor">
+            <section className="my-25">
+                <Formulario />
+            </section>
         </section>
 
         <Footer />
