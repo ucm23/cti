@@ -126,7 +126,7 @@ const Formulario = () => {
 					</div>
 					{ touched.mensaje && errors.mensaje && <div className='error'> {errors.mensaje} </div> }
 
-					<button className='btnContact' type='submit'><spam>Enviar</spam><BiMailSend className='sendMail'/> </button>
+					<button className='btnContact' type='submit'><span>Enviar</span><BiMailSend className='sendMail'/> </button>
 					{ formularioenviado && <p className='exito'>Formulario enviado con éxito</p>}
 				</form>
 
