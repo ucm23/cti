@@ -78,34 +78,39 @@ const Formulario = () => {
 					</div>  
 					{ touched.nombre && errors.nombre && <div className='error'> {errors.nombre} </div> }
 
-					<div>
-						<label htmlFor='correo'>Correo: </label>
-						<input 
-							type='text' 
-							id='correo' 
-							name='correo'
-							autoComplete='off'
-							placeholder='micorreo@mail.com'
-							value={values.correo}
-							onChange={handleChange}
-							onBlur={handleBlur} />
+					<div className='footer-blocks'>
+						<div className='correo-tel'>
+							<div>
+								<label htmlFor='correo'>Correo: </label>
+								<input 
+									type='text' 
+									id='correo' 
+									name='correo'
+									autoComplete='off'
+									placeholder='micorreo@mail.com'
+									value={values.correo}
+									onChange={handleChange}
+									onBlur={handleBlur} />
+							</div>
+							{ touched.correo && errors.correo && <div className='error'> {errors.correo} </div> }
+						</div>
+						<div className='correo-tel'>
+							<div>
+								<label htmlFor='telefono'>Teléfono: </label>
+								<input 
+									type='tel' 
+									id='telefono' 
+									name='telefono'
+									autoComplete='off'
+									maxLength={10}
+									value={values.telefono}
+									onChange={handleChange}
+									placeholder='9998887771'
+									onBlur={handleBlur} />
+							</div>
+							{ touched.telefono && errors.telefono && <div className='error'> {errors.telefono} </div> }
+						</div>
 					</div>
-					{ touched.correo && errors.correo && <div className='error'> {errors.correo} </div> }
-
-					<div>
-						<label htmlFor='telefono'>Teléfono: </label>
-						<input 
-							type='tel' 
-							id='telefono' 
-							name='telefono'
-							autoComplete='off'
-							maxLength={10}
-							value={values.telefono}
-							onChange={handleChange}
-							placeholder='9998887771'
-							onBlur={handleBlur} />
-					</div>
-					{ touched.telefono && errors.telefono && <div className='error'> {errors.telefono} </div> }
 
 					<div>
 						<label htmlFor='mensaje'>Mensaje: </label>
@@ -114,6 +119,7 @@ const Formulario = () => {
 							id='mensaje' 
 							name='mensaje'
 							autoComplete='off'
+							placeholder='Escribe un mensaje'
 							value={values.mensaje}
 							onChange={handleChange}
 							onBlur={handleBlur}></textarea>
