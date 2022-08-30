@@ -1010,13 +1010,18 @@ body::-webkit-scrollbar-thumb{
     line-height: 1.8;
 }
 
+/* Formulario */
+
 .formulario {
 	min-width: 600px;
+    max-width: 750px;
 	margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
 	background: #fff;
 	border-radius: 5px;
 	padding: 20px;
-	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    filter: drop-shadow(0 0 0.45rem rgba(0, 0, 0, 0.281));
 }
 
 .formulario > div {
@@ -1043,9 +1048,19 @@ body::-webkit-scrollbar-thumb{
 	color: #1f1f1f;
 }
 
-.formulario input:focus {
+.formulario textarea{
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 120px;
+    min-height: 120px;
+}
+
+
+
+.formulario input:focus,
+.formulario textarea:focus {
 	outline: none;
-	border: 2px solid #0085FF;
+	border: 2px solid var(--color-naranja-oscuro);
 }
 
 .formulario .error {
@@ -1056,12 +1071,13 @@ body::-webkit-scrollbar-thumb{
 
 .formulario button[type="submit"] {
 	display: block;
-	background: #0085FF;
+	background: var(--color-title);
 	font-weight: 600;
 	font-family: 'Open Sans', sans-serif;
 	border: none;
 	cursor: pointer;
-	width: 100%;
+	width: 30%;
+    margin: 0 auto;
 	padding: 10px;
 	border-radius: 5px;
 	color: #fff;
@@ -1069,17 +1085,24 @@ body::-webkit-scrollbar-thumb{
 	transition: .3s ease all;
 }
 
+.btnContact{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.sendMail{
+    color: #dfdbdb;
+    font-size: 1.1rem;
+}
+
 .formulario button[type="submit"]:hover {
-	background: #0051ff;
+	background: var(--color-naranja-oscuro);
 }
 
 .formulario .exito {
 	text-align: center;
 	font-size: 14px;
 	padding-top: 20px;
-	color: #02a802;
-}
-
-.formulario input[type="radio"] {
-	width: auto;
+	color: #129212;
 }
