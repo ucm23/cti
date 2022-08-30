@@ -23,7 +23,7 @@ const Soluciones = () => {
 
           <section className="contenedor overhid">
               {
-                serv.map(({t1, p1, a1, img1, clase, direction}, i) => {
+                serv.map(({t1, p1, a1, img1, clase, direction, alt}, i) => {
                   return (
                     <Servicio
                         key={i}
@@ -33,6 +33,7 @@ const Soluciones = () => {
                         img1={img1}
                         clase={clase}
                         direction={direction}
+                        alt={alt}
                     />
                   )
                 })
