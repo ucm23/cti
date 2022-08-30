@@ -1,6 +1,7 @@
 import { useState, useRef } from 'react';
 import { Formik}  from 'formik'
 import emailjs from '@emailjs/browser'
+import {BiMailSend} from 'react-icons/bi'
 
 const Formulario = () => {
 
@@ -18,7 +19,9 @@ const Formulario = () => {
 		<Formik
 			initialValues={{
 				nombre: '',
-				correo: ''
+				correo: '',
+				telefono: '',
+				mensaje: ''
 			}}
 
 			validate={(valores)=>{
@@ -36,6 +39,15 @@ const Formulario = () => {
 							errores.correo = 'El correo debe tener el sig. formato correo@correo.com';
 						}
 
+				if(!valores.telefono){
+					errores.telefono = 'Por favor ingresa un número de télefono';
+				}
+
+				if(!valores.mensaje){
+					errores.mensaje = 'Por favor ingresa un mensaje';
+				}
+
+
 				return errores;
 			}}
 
@@ -51,6 +63,7 @@ const Formulario = () => {
 			{({values,errors, touched, handleSubmit, handleChange, handleBlur})=>(
 
 				<form ref={form} className='formulario' onSubmit={handleSubmit}>
+					<h1 className="titulo_mapa">Escríbenos</h1>
 					<div>
 						<label htmlFor='nombre'>Nombre: </label>
 						<input 
@@ -64,6 +77,7 @@ const Formulario = () => {
 							onBlur={handleBlur} />
 					</div>  
 					{ touched.nombre && errors.nombre && <div className='error'> {errors.nombre} </div> }
+
 					<div>
 						<label htmlFor='correo'>Correo: </label>
 						<input 
@@ -77,8 +91,37 @@ const Formulario = () => {
 							onBlur={handleBlur} />
 					</div>
 					{ touched.correo && errors.correo && <div className='error'> {errors.correo} </div> }
-					<button type='submit'>Enviar</button>
-					{ formularioenviado && <p className='exito'>Formulario enviado con exito</p>}
+
+					<div>
+						<label htmlFor='telefono'>Teléfono: </label>
+						<input 
+							type='tel' 
+							id='telefono' 
+							name='telefono'
+							autoComplete='off'
+							maxLength={10}
+							value={values.telefono}
+							onChange={handleChange}
+							placeholder='9998887771'
+							onBlur={handleBlur} />
+					</div>
+					{ touched.telefono && errors.telefono && <div className='error'> {errors.telefono} </div> }
+
+					<div>
+						<label htmlFor='mensaje'>Mensaje: </label>
+						<textarea 
+							type='tel' 
+							id='mensaje' 
+							name='mensaje'
+							autoComplete='off'
+							value={values.mensaje}
+							onChange={handleChange}
+							onBlur={handleBlur}></textarea>
+					</div>
+					{ touched.mensaje && errors.mensaje && <div className='error'> {errors.mensaje} </div> }
+
+					<button className='btnContact' type='submit'><spam>Enviar</spam><BiMailSend className='sendMail'/> </button>
+					{ formularioenviado && <p className='exito'>Formulario enviado con éxito</p>}
 				</form>
 
 			)}
