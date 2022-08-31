@@ -8,7 +8,7 @@ import Image from 'next/image'
 const Nosotros = () => {
     return (
         <Layout>
-            <header className='about'>
+            <header className='about-header'>
               {/* Barra de navegación */}
               <Navbar />
 
@@ -23,7 +23,7 @@ const Nosotros = () => {
             </header>
 
             <section className='bg-nosotros'>
-                <section className='nosotros overhid'>
+                <section className='d-flex overhid'>
                     <section className='nosotros-texto'>
                         <Fade direction="right">
                             <h1 className='nosotros-titulo'>Grupo CTI Tech-IN POS</h1>
