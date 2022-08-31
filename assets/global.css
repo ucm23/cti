@@ -930,9 +930,13 @@ body::-webkit-scrollbar-thumb{
 
 /*------------ blog ----------*/
 .blog .heading { text-align: center; }
+.heading h3 {
+    color: var(--color-naranja-oscuro);
+    font-size: var(--font-subtitulos);
+    margin-bottom:50px ;
+}
 .blog h2 { margin: 20px 0; }
 .blog .text { margin: 0; }
-
 .blog span {
     opacity: 0.5;
     font-size: 15px;
