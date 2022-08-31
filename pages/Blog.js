@@ -26,8 +26,7 @@ const Blog = () => {
         <section className='blog cont'>
           <div className='conteni topMarign'>
             <div className='heading'>
-                <h3>BLOG</h3>
-                <h1>Read Inspirational Story Every Week</h1>
+                <h3>Conoce más sobre tecnología a través de nuestro blog</h3>
             </div>
 
             <div className='contain grid topMarign'>
