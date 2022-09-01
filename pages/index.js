@@ -155,9 +155,6 @@ const index = () => {
                 </section>
             </section>
             
-            <Suspense fallback={`Loading...`}>
-                <Footer />
-            </Suspense>
         </Layout>
     )
 }

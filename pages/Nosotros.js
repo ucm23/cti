@@ -92,7 +92,6 @@ const Nosotros = () => {
                 </section>
             </section>
 
-            <Footer />
         </Layout>
     )
 }

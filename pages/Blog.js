@@ -4,7 +4,7 @@ import BlogItem from '../components/BlogItem'
 import Footer from '../components/Footer'
 import Layout from '../components/Layout'
 import Navbar from '../components/Navbar'
-import { Blogdata } from '../lib/services'
+import { Blogdata } from '../lib/blog'
 
 const Blog = () => {
     return (
@@ -21,32 +21,32 @@ const Blog = () => {
                       </h1>
                   </Fade>
               </section>
-            </header>
+          </header>
 
-        <section className='blog cont'>
-          <div className='conteni topMarign'>
-            <div className='heading'>
-                <h3>Conoce más sobre tecnología a través de nuestro blog</h3>
+          <section className='blog cont'>
+            <div className='conteni topMarign'>
+              <div className='heading'>
+                  <h3>Conoce más sobre tecnología a través de nuestro blog</h3>
+              </div>
+
+              <div className='contain grid topMarign'>
+                  {
+                    Blogdata.map(({id,cover, date, title, desc}, i) => {
+                      return (
+                          <BlogItem
+                            key={i}
+                            id={id}
+                            cover={cover}
+                            date={date}
+                            title={title}
+                            desc={desc}
+                          />
+                      )
+                    })
+                  }
+              </div>
             </div>
-
-            <div className='contain grid topMarign'>
-                {
-                  Blogdata.map(({cover, date, title, desc}) => {
-                    return (
-                        <BlogItem
-                          cover={cover}
-                          date={date}
-                          title={title}
-                          desc={desc}
-                        />
-                    )
-                  })
-                }
-            </div>
-          </div>
-        </section>
-
-        <Footer />
+          </section>
       </Layout>
     )
 }

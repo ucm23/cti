@@ -88,8 +88,6 @@ const Contacto = () => {
                 </section>
             </Fade>
         </section>
-
-        <Footer />
     </Layout>
   )
 }
