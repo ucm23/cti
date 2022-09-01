@@ -1,17 +1,25 @@
+import { useRouter } from 'next/router'
 
-const BlogItem = ({cover, date, title, desc}) => {
+const BlogItem = ({id,cover, date, title, desc}) => {
+
+    const { push } = useRouter()
+  
+    const handleBlog = () =>{
+        push(`/post/${id}`)
+    }
+
     return (
-        <div className='box'>
-            <div className='img'>
+        <div className='box'
+            onClick={handleBlog}
+        >
+            <div className='img-blog'>
                 <img src={cover} />
             </div>
-            <div className='text'>
+            <div className='textblog'>
                 <span>{date}</span>
                 <h2>{title}</h2>
                 <p>{desc}</p>
-                <a href='/'>
-                    Leer más...
-                </a>
+                <span>Leer más...</span>
             </div>
         </div>
     )
