@@ -7,7 +7,7 @@ const Navbar = () => {
             <nav className="nav container">
                 <Link href="/">
                 <a className="nav_logo">
-                    <img className='logo_cti' src='logo.png' alt='Logo grupo CTI TECH_IN POS' />
+                    <img className='logo_cti' src='/logo.png' alt='Logo grupo CTI TECH_IN POS' />
                     <p className="nav_title"> Grupo CTI</p>
                 </a>
                 </Link>
