@@ -18,7 +18,7 @@ const Work = ({titulo, src, alt}) => {
 
     return (
         <Fade direction="left">
-            <Card sx={{ minWidth: 435, maxWidth: 435  }} className='card-margen '>
+            <Card sx={{ minWidth: 435, maxWidth: 435  }} className='card-margenWork'>
                 <div className='overhid'>
                         <CardMedia
                             component="img"
