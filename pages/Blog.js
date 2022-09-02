@@ -1,12 +1,21 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Fade } from 'react-awesome-reveal'
 import BlogItem from '../components/BlogItem'
-import Footer from '../components/Footer'
 import Layout from '../components/Layout'
 import Navbar from '../components/Navbar'
-import { Blogdata } from '../lib/blog'
 
 const Blog = () => {
+    const [Blogdata, setBlogdata] = useState([])
+
+    useEffect(() => {
+        (async ()=>{
+            const resBlog = await fetch("/data/test.json")
+            const Blog = await resBlog.json();
+            console.log('Hice el fetch de blog')
+            setBlogdata(Blog.Blogdata)
+        })()
+    }, [])
+
     return (
       <Layout>
           <header className='blog-header'>
