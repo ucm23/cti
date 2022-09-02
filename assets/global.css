@@ -41,6 +41,7 @@ body::-webkit-scrollbar-thumb{
     overflow: hidden;
     padding: var(--padding-container);
 }
+
 .logo_cti{ width: 13%; }
 .hero{
     width: 100%;
@@ -1061,7 +1062,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 .read-blog-container{
-    width: 75%;
+    width: 70%;
 }
 
 .read-blog{
@@ -1079,6 +1080,7 @@ body::-webkit-scrollbar-thumb{
     justify-content: space-between;
     align-items: center;
     margin-top: 25px;
+    color: var(--color-naranja-oscuro);
 }
 
 .read-full{
@@ -1106,6 +1108,28 @@ body::-webkit-scrollbar-thumb{
 .nextPostIcon{
     font-size: 1.3rem;
 }
+
+.morePosts{
+    position: sticky;
+    top: 45px;
+    margin: 20px 0;
+}
+
+.titlesPost{
+    width: 30%;
+    /* padding: 20px;  */
+}
+
+.h3-posts{ text-align: center; }
+
+.titleItem{
+    margin: 15px 0; 
+}
+
+.titleItem:hover{ 
+    color: #eb770b;
+    cursor: pointer;
+ }
 
   /*------------ blog ----------*/
 
