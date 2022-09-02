@@ -1,0 +1,74 @@
+{
+    
+    "imgs" : [
+        {   
+            "src": "/clientes/1.png",
+            "className": "cliente1 mx-15",
+            "alt": "Sedena, cliente de CTI"
+        },
+        {       
+            "src": "/clientes/2.png",
+            "className": "cliente2 mx-15",
+            "alt": "Cerveza Moctezuma, cliente de CTI"
+        },
+        {       
+            "src": "/clientes/3.png",
+            "className": "cliente3 mx-15",
+            "alt": "Saving with Energy Mexico, cliente de CTI"
+        },
+        {
+            "src": "/clientes/4.jpg",
+            "className": "cliente4 mx-15",
+            "alt": "Tela, cliente de CTI"
+        },
+        {
+            "src": "/clientes/5.jpg",
+            "className": "cliente5 mx-15",
+            "alt": "ICA Infraestuctura, cliente de CTI"
+        },
+        {
+            "src": "/clientes/6.webp",
+            "className": "cliente6 mx-15",
+            "alt": "Negocios constantes, cliente de CTI"
+        },
+        {
+            "src": "/clientes/7.png",
+            "className": "cliente7 mx-15",
+            "alt": "Grupo Dragón, cliente de CTI"
+        },{   
+            "src": "/clientes/1.png",
+            "className": "cliente1 mx-15",
+            "alt": "Sedena, cliente de CTI"
+        },
+        {       
+            "src": "/clientes/2.png",
+            "className": "cliente2 mx-15",
+            "alt": "Cerveza Moctezuma, cliente de CTI"
+        },
+        {       
+            "src": "/clientes/3.png",
+            "className": "cliente3 mx-15",
+            "alt": "Saving with Energy Mexico, cliente de CTI"
+        },
+        {
+            "src": "/clientes/4.jpg",
+            "className": "cliente4 mx-15",
+            "alt": "Tela, cliente de CTI"
+        },
+        {
+            "src": "/clientes/5.jpg",
+            "className": "cliente5 mx-15",
+            "alt": "ICA Infraestuctura, cliente de CTI"
+        },
+        {
+            "src": "/clientes/6.webp",
+            "className": "cliente6 mx-15",
+            "alt": "Negocios constantes, cliente de CTI"
+        },
+        {
+            "src": "/clientes/7.png",
+            "className": "cliente7 mx-15",
+            "alt": "Grupo Dragón, cliente de CTI"
+        }
+    ]
+}
