@@ -43,7 +43,6 @@ const post = () => {
             push(`/post/${(Number(id)-1)}`)
         }
     }
-
     return (
         <Layout>
           <header className='blog-header'>
@@ -53,16 +52,20 @@ const post = () => {
               {/* Encabezado */}
               <section className="hero_container container">
                   <Fade direction="right">
-                   {
-                        Blogdata.map((blog, i)=>{
-                            if(blog.id == id){
-                                return (
-                                    <h1 key={i} className="titulo-read-blog"> { blog.title }</h1>          
-                                )
-                            }
-                        })
-                    }
                     
+                    {
+                            Blogdata.map((blog, i)=>{
+                                if(blog.id == id){
+                                    return (
+                                        <h1 key={i} className="titulo-read-blog"> 
+                                        
+                                                { blog.title }
+                                            
+                                        </h1>          
+                                    )
+                                }
+                            })
+                        }
                   </Fade>
               </section>
           </header>
@@ -104,9 +107,26 @@ const post = () => {
                     ><span>Siguiente blog</span><BsFillArrowRightCircleFill className='nextPostIcon' /></button>
                 </div>
             </section>
-            <div>
-                zxczxc
-            </div>
+            <aside className='titlesPost'>
+                <ul className='morePosts'>
+                    <h3 className='h3-posts'>También te puede interesar...</h3>
+                    {
+                        Blogdata.map((blog, i)=>{
+                            if(blog.id != id){
+                                return (
+                                    <li 
+                                        key={i}
+                                        className='titleItem'
+                                        onClick={()=>{
+                                            push(`/post/${blog.id}`);
+                                        }}
+                                    >{ blog.title }</li> 
+                                )     
+                            }  
+                        })
+                    }
+                </ul>
+            </aside>
           </section>
 
       </Layout>
