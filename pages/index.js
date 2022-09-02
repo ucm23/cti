@@ -1,24 +1,49 @@
-import { services, works, imgs, cert } from '../lib/services'
 import { MdExpandMore } from 'react-icons/md';
 import { Fade } from "react-awesome-reveal";
 import { ColorButton } from '../lib/theme';
 import { useRouter } from 'next/router'
 import { Stack } from '@mui/material';
-import { Suspense } from 'react'
+import { Suspense, useEffect, useState } from 'react'
 import Layout from '../components/Layout';
 import Navbar from '../components/Navbar';
 import Work from '../components/Work';
 import dynamic from 'next/dynamic'
 
-const Footer = dynamic(() => import('../components/Footer'), {
-    suspense: true,
-})
 const Service = dynamic(() => import('../components/Service'), {
     suspense: true,
 })
 
 const index = () => {
     const { push } = useRouter();
+    const [work, setWork] = useState([]);
+    const [services, setServices] = useState([]);
+    const [cert, setCert] = useState([]);
+    const [imgs, setImgs] = useState([]);
+
+    useEffect(() => {
+        (async ()=>{
+            const resWorks = await fetch("/data/work.json")
+            const works = await resWorks.json();
+            console.log('Hice el fetch de work')
+            setWork(works.works)
+
+            const resServices = await fetch("/data/services.json")
+            const service = await resServices.json();
+            console.log('Hice el fetch de services')
+            setServices(service.services)
+
+            const resCert = await fetch("/data/cert.json")
+            const cer = await resCert.json();
+            console.log('Hice el fetch de cert')
+            setCert(cer.cert)
+
+            const resImgs = await fetch("/data/imgs.json")
+            const img = await resImgs.json();
+            console.log('Hice el fetch de imgs')
+            setImgs(img.imgs)
+        })()
+    }, [])
+    
 
     const handleClick = () => {
         push('/Blog');    
@@ -105,7 +130,7 @@ const index = () => {
                     <h1 className='trabajos-titulo'>Trabajos Recientes</h1>
                     <div className='tarjetas'>
                         {
-                            works.map(({titulo, src, alt}, i) => {
+                            work.map(({titulo, src, alt}, i) => {
                                 return ( 
                                     <Work
                                         key={i}
