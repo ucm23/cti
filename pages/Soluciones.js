@@ -1,11 +1,21 @@
+import { useState, useEffect } from "react"
 import { Fade } from "react-awesome-reveal"
-import Footer from "../components/Footer"
 import Layout from "../components/Layout"
 import Navbar from "../components/Navbar"
 import Servicio from "../components/Servicio"
-import {serv} from '../lib/services'
 
 const Soluciones = () => {
+    const [serv, setServ] = useState([])
+
+    useEffect(() => {
+        (async ()=>{
+            const resSoluciones = await fetch("/data/serv.json")
+            const soluciones = await resSoluciones.json();
+            console.log('Hice el fetch de soluciones')
+            setServ(soluciones.serv)
+        })()
+    }, [])
+
     return (
       <Layout>
           <header className='soluciones-header'>
