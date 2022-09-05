@@ -71,7 +71,7 @@ const Footer = () => {
                         <Link href='/Contacto'>
                             <a className='footer-cen'>
                                 <MdLocationOn className='block4-icon' />
-                                <div className=''>
+                                <div >
                                     <p>Av. Ejército Nacional 769, 769, piso</p> 
                                     <p>2. Col. Granada C.P. 11520</p> 
                                 </div>
