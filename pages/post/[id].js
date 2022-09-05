@@ -57,10 +57,8 @@ const post = () => {
                             Blogdata.map((blog, i)=>{
                                 if(blog.id == id){
                                     return (
-                                        <h1 key={i} className="titulo-read-blog"> 
-                                        
-                                                { blog.title }
-                                            
+                                        <h1 key={i} className="titulo-read-blog">                                       
+                                            { blog.title }          
                                         </h1>          
                                     )
                                 }
@@ -80,17 +78,17 @@ const post = () => {
                                     <img className='img-detail' src={blog.cover} alt={blog.title} />
                                     <div className='d-flex aut-date'>
                                         <div>
-                                            <BsPersonCircle /> <span>{ blog.author }</span>
+                                            <BsPersonCircle /><span>{blog.author}</span>
                                         </div>
                                         <div>
-                                            <FcCalendar /> <span>{ blog.date }</span>
+                                            <FcCalendar /><span>{blog.date}</span>
                                         </div>
                                     </div>
-                                    <div className='read-full'> {blog.read.p1}</div>                           
-                                    <div className='read-full'> {blog.read.p2}</div>
-                                    <div className='read-full'> {blog.read.p3}</div>
-                                    <div className='read-full'> {blog.read.p4}</div>
-                                    <div className='read-full'> {blog.read.p5} </div>
+                                    <div className='read-full'>{blog.read.p1}</div>                          
+                                    <div className='read-full'>{blog.read.p2}</div>
+                                    <div className='read-full'>{blog.read.p3}</div>
+                                    <div className='read-full'>{blog.read.p4}</div>
+                                    <div className='read-full'>{blog.read.p5}</div>
                                 </div>
                             )
                         }
