@@ -13,7 +13,7 @@ const BlogItem = ({id,cover, date, title, desc}) => {
             onClick={handleBlog}
         >
             <div className='img-blog'>
-                <img src={cover} />
+                <img src={cover} alt={title} />
             </div>
             <div className='textblog'>
                 <span>{date}</span>
