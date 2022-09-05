@@ -232,6 +232,7 @@ body::-webkit-scrollbar-thumb{
         pointer-events: none;
         transition: .7s opacity;
         z-index: 100;
+        padding: 0 !important;
     }
 
     .nav__link--show{
