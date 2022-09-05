@@ -44,7 +44,6 @@ const index = () => {
         })()
     }, [])
     
-
     const handleClick = () => {
         push('/Blog');    
     }
@@ -56,7 +55,8 @@ const index = () => {
                 <Navbar />
 
                 {/* Encabezado */}
-                <section className="hero_container container">
+                <section 
+                    className='hero_container container'>
                     <Fade direction="left">
                         <h1 className="hero_title">
                             Grupo CTI<br />Tech-IN POS
@@ -106,7 +106,7 @@ const index = () => {
                         Servicios
                     </h1>
                     <div className='tarjetas'>
-                        <Suspense fallback={`Loading...`}>
+                        <Suspense fallback={'Loading...'}>
                              {
                                 services.map(({titulo, descrip, icono},i) =>{
                                     return(
