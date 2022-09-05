@@ -1,8 +1,8 @@
 import Head from 'next/head';
 import NProgress from 'nprogress';
+import Footer from './Footer';
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
-import Footer from './Footer';
 
 const Layout = ({children}) => {
   
