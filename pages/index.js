@@ -77,7 +77,7 @@ const index = () => {
 
             {/* Bienvenida */}
             <section>
-                <section className='containerWP p-10'>
+                <section className='containerWP movilBienv p-10'>
                     <div className='bienvenida'>
                         <Fade direction="left">
                             <h1 className='bienvenida_titulo'>Bienvenidos</h1>
