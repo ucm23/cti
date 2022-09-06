@@ -1425,5 +1425,20 @@ body::-webkit-scrollbar-thumb{
     }
 
     .mx-15{ margin: 0 15px; }
-} 
+}
+
+@media (max-width: 500px) {
+    .bg-footer{
+        height: 850px;    
+    }
+
+    .footer-block{
+        width: 100%;
+    }
+
+    .year{
+        left: 10px;
+        width: 200px;
+    }
+}
     
