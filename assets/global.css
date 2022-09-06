@@ -1429,7 +1429,7 @@ body::-webkit-scrollbar-thumb{
 
 @media (max-width: 500px) {
     .bg-footer{
-        height: 850px;    
+        height: 825px;    
     }
 
     .footer-block{
@@ -1440,5 +1440,54 @@ body::-webkit-scrollbar-thumb{
         left: 10px;
         width: 200px;
     }
+
+    .footer-derechos{
+        margin-top: 0;
+    }
+
+    .bienvenida_texto{
+        padding: 25px;
+        padding-bottom: 45px;
+    }
+
+    .hero_title{
+        font-size: 3.2rem;
+    }
+
+    .hero_texto,
+    .nav_title{
+        font-size: 1.3rem;
+    }
+
+    .logo_cti{
+        width: 30%;
+    }
+
+    .servicios-titulo,
+    .trabajos-titulo,
+    .clientes-titulo{
+        font-size: 2.85rem;
+    }
+
+    .clientes-subtitulo{
+        font-size: 1.1rem;
+    }
+
+    .text-center{
+        font-size: 2.85rem;
+    }
+
+    .certificacion{
+        min-height: 535px;
+        max-height: 535px;
+    }
+
+    .cert1{ width: 21%; }
+    .cert2{ width: 23%; }
+    .cert3{ width: 27%; }
+    .cert4{ width: 27%; }
+    .cert5{ width: 42%; }
+    .cert6{ width: 40%; }
+    .cert7{ width: 40%; }
 }
     
