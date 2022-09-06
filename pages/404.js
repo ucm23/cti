@@ -1,8 +1,16 @@
 import { Fade } from "react-awesome-reveal"
 import Layout from "../components/Layout"
 import Navbar from "../components/Navbar"
+import { useRouter } from 'next/router'
 
 const NotFound = () => {
+
+    const { push } = useRouter();
+
+    setTimeout(() => {
+        push("/");
+    }, 4500);
+
     return (
         <Layout>
             <header className='not-header'>
