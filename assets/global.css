@@ -585,7 +585,6 @@ body::-webkit-scrollbar-thumb{
     flex-wrap: wrap;
 }
 
-
 .block1-title{
     color: #f1a026;
     font-size: 2rem;
@@ -596,6 +595,7 @@ body::-webkit-scrollbar-thumb{
     display: flex;
     justify-content: space-around;
     font-size: 1.8rem;
+    margin-bottom: 35px;
 }
 
 .icons a { color: #fff; }
@@ -1320,6 +1320,10 @@ body::-webkit-scrollbar-thumb{
     .slider::before, .slider::after {
         display: none;
     }
+
+    .grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 820px) {
@@ -1425,6 +1429,10 @@ body::-webkit-scrollbar-thumb{
     }
 
     .mx-15{ margin: 0 15px; }
+
+    .grid{
+        grid-gap: 10px;
+    }
 }
 
 @media (max-width: 500px) {
@@ -1465,16 +1473,13 @@ body::-webkit-scrollbar-thumb{
 
     .servicios-titulo,
     .trabajos-titulo,
-    .clientes-titulo{
+    .clientes-titulo,
+    .text-center{
         font-size: 2.85rem;
     }
 
     .clientes-subtitulo{
         font-size: 1.1rem;
-    }
-
-    .text-center{
-        font-size: 2.85rem;
     }
 
     .certificacion{
@@ -1489,5 +1494,35 @@ body::-webkit-scrollbar-thumb{
     .cert5{ width: 42%; }
     .cert6{ width: 40%; }
     .cert7{ width: 40%; }
+
+    .grid{
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 25px;
+    }
+}
+
+@media (max-width:360px) {
+    .servicios-titulo,
+    .trabajos-titulo,
+    .clientes-titulo,
+    .text-center{
+        font-size: 2.6rem;
+    }
+
+    .card-margenWork{
+        max-width: 290px !important;
+        min-width: 290px !important;
+    }
+}
+
+@media only screen and (max-width:320px) {
+    .card-margenWork{
+        max-width: 260px !important;
+        min-width: 260px !important;
+    }
+
+    .hero_title{
+        font-size: 2rem;
+    }
 }
     
