@@ -27,16 +27,16 @@ const Nosotros = () => {
                     <section className='nosotros-texto'>
                         <Fade direction="right">
                             <h1 className='nosotros-titulo'>Grupo CTI Tech-IN POS</h1>
-                            <p className='nosotros-text'>Somos un equipo multidisciplinario con más de 20 años de experiencia en servicios de consultoría especializada en: Seguridad Informática, Virtualización, Soporte Técnico, Infraestructura, Análisis y Diseño de Procesos, Políticas, Registro de Propiedad Intelectual y Desarrollo de Software agrandes corporativos de los sectores: financiero, manufactura, construcción, farmacéutico, automotriz, hospitalario, educativo y gobierno. Además contamos con Plataformas TI propias.</p>
+                            <p className='nosotros-text'>Somos un equipo multidisciplinario con más de 20 años de experiencia en servicios de consultoría especializada en: Seguridad Informática, Virtualización, Soporte Técnico, Infraestructura, Análisis y Diseño de Procesos, Políticas, Registro de Propiedad Intelectual y Desarrollo de Software agrandes corporativos de los sectores: financiero, manufactura, construcción, farmacéutico, automotriz, hospitalario, educativo y gobierno. Además contamos con Plataformas TI própias.</p>
                         </Fade>
                     </section>
                     <Fade direction="left">
-                        <section>
+                        <section className='cti_person'>
                             <Image
                                 src="/Person_Image.svg"
                                 alt="Negocios en CTI"
                                 width={520}
-                                height={520}
+                                height={520}                           
                             />
                         </section>
                     </Fade>
@@ -48,7 +48,7 @@ const Nosotros = () => {
                     <Fade direction="down">
                         <div className='vis'>
                             <h1>Visión</h1>
-                            <p> Ser el aliado estratégico en Tecnología, que nos permita posicionarnos como el principal referente en soluciones IT y ciberseguridad en México, Estados Unidos, Centro y Sur de América.</p>
+                            <p>Ser el aliado estratégico en Tecnología, que nos permita posicionarnos como el principal referente en soluciones IT y ciberseguridad en México, Estados Unidos, Centro y Sur de América.</p>
                         </div>
                     </Fade>
                     <Fade direction="up">
