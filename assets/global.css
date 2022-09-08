@@ -1411,6 +1411,7 @@ body::-webkit-scrollbar-thumb{
 
     .servicio img{
         width: 55%;
+        margin-top: 10px;
     }
 }
 
@@ -1629,6 +1630,10 @@ body::-webkit-scrollbar-thumb{
     .servicio-texto p{
         font-size: 0.97rem;
         line-height: 1.6;
+    }
+
+    .servicio img{
+        width: 75%;
     }
 }
 
