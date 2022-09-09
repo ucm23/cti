@@ -47,7 +47,6 @@ const Formulario = () => {
 					errores.mensaje = 'Por favor ingresa un mensaje';
 				}
 
-
 				return errores;
 			}}
 
@@ -79,7 +78,7 @@ const Formulario = () => {
 					{ touched.nombre && errors.nombre && <div className='error'> {errors.nombre} </div> }
 
 					<div className='footer-blocks'>
-						<div className='correo-tel'>
+						<div className='correo-tel m-correo-tel'>
 							<div>
 								<label htmlFor='correo'>Correo: </label>
 								<input 
