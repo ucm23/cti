@@ -49,14 +49,14 @@ const Footer = () => {
                     <div className='footer-block block3'>
                         <p className='block3-title'>Servicios</p>
                         <p>Ciberseguridad</p>
-                        <p>Aplicaciones Propias</p>
-                        <p>Análisis y diseño de sistemas</p>
+                        <p>Aplicaciones Própias</p>
                         <p>Propiedad intelectual</p>
                         <p>Centro de ciberseguridad</p>
+                        <p>Análisis y diseño de sistemas</p>
                     </div>
 
                     <div className='footer-block block4'>
-                        <p className='block4-title'>Contactanos</p>
+                        <p className='block4-title'>Contáctanos</p>
 
                         <Link href='mailto:contacto@consultores.cti.com.mx'>
                             <a target='_blank' className='footer-cen'>
