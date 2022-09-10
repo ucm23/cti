@@ -8,6 +8,7 @@ import Layout from '../components/Layout';
 import Navbar from '../components/Navbar';
 import Work from '../components/Work';
 import dynamic from 'next/dynamic'
+import Image from 'next/image'
 
 const Service = dynamic(() => import('../components/Service'), {
     suspense: true,
@@ -84,10 +85,19 @@ const index = () => {
                             <p className='bienvenida_texto'>Grupo CTI Tech-IN POS es una empresa que se creo en el año 2001 con el objetivo de vender Hardware, Software y Servicios de Tecnología, ofrecemos un servicio y atención personalizada acorde a las necesidades de nuestros clientes, con una oferta competitiva y de valor en conjunto con nuestros socios de negocios.</p>    
                         </Fade>
                     </div>
-                    <img 
+                    <div className='img_bienvenida' style={{ width: 460 }} >
+                        <Image
+                            src='/about.jpg'
+                            width={460}
+                            height={510}
+                            
+                            layout="responsive"
+                            alt='Bienvenida al grupo CTI' />
+                    </div>
+                    {/* <img 
                         className='img_bienvenida'
                         src='/about.jpg'
-                        alt='Bienvenida al grupo CTI' />
+                        alt='Bienvenida al grupo CTI' /> */}
                     <div className='years'>
                         <div className='year'>
                             <Fade direction="left">
@@ -152,10 +162,16 @@ const index = () => {
                     <div className="slider">
                         <div className="slide-track">
                             {
-                                imgs.map(({src, className, alt},i)=>{
+                                imgs.map(({src, className, width,heigth, alt},i)=>{
                                     return (
-                                        <div className='slide' key={i}>
-                                            <img className={className} src={src} alt={alt} />
+                                        <div className='slide' style={{ width: width }} key={i}>
+                                            <Image 
+                                                className={className} 
+                                                width={width} 
+                                                height={heigth} 
+                                                layout="responsive" 
+                                                src={src} 
+                                                alt={alt}/>
                                         </div>
                                     )
                                 })

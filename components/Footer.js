@@ -85,6 +85,7 @@ const Footer = () => {
                     <p>Política de privacidad</p>
                 </div>
             </section>
+           {/*  <script src="https://account.snatchbot.me/script.js"></script><script>window.sntchChat.Init(270261)</script> */}
         </section>
     )
 }

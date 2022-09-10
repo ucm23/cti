@@ -297,9 +297,8 @@ body::-webkit-scrollbar-thumb{
 
 .p-10{ padding: 25px; }
 .img_bienvenida{
-    width: 40%;
-    border-radius: var(--border-radius);
-    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.281));
+    /* width: 40%; */
+    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.281)) !important;
 }
 
 .year{
@@ -368,6 +367,10 @@ body::-webkit-scrollbar-thumb{
     transition: all 0.2s ease-in-out !important;
 }
 
+.heightImage{
+    height: 250px;
+}
+
 .card-img-top:hover{ transform: scale(1.25) !important; }
 
 .icono-servicios{
@@ -398,7 +401,7 @@ body::-webkit-scrollbar-thumb{
 
 /* carousel */
 .flex-column{ flex-direction: column; }
-.cliente1,
+/* .cliente1,
 .cliente2,
 .cliente5{
     width: 200px;
@@ -409,13 +412,15 @@ body::-webkit-scrollbar-thumb{
     width: 480px;
 }
 
+
+.cliente6{ 
+    width: 350px; } */
 .cliente4{
-    width: 200px;
     border-radius: 50%;
 }
 
-.cliente6{ width: 350px; }
-.mx-15{ margin: 0 30px; }
+
+.mx-15{ margin: 0 30px }
 .mx-10{ margin: 0 15px; }
 .clientes-titulo{
     text-align: center;
@@ -438,6 +443,7 @@ body::-webkit-scrollbar-thumb{
 	overflow:hidden;
 	position: relative;
 	width: 1100px;
+    height: 236px;
 }
 	
 .slider::before, .slider::after {
@@ -461,13 +467,18 @@ body::-webkit-scrollbar-thumb{
     top: 0;
 }
 
+.slide{
+    margin: 0 10px;
+}
+
 .slide-track {
-    -webkit-animation: scroll 40s linear infinite;
-    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 25s linear infinite;
+    animation: scroll 25s linear infinite;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: calc(250px * 14);
+    width: 4220px;
+    height: 236px;
 }
 
 @-webkit-keyframes scroll {
@@ -1143,6 +1154,10 @@ body::-webkit-scrollbar-thumb{
     cursor: pointer;
  }
 
+ .chat__copyright{
+    display: none !important;
+ }
+
 /* Responsive */
 
 @media (max-width: 1288px) {
@@ -1194,6 +1209,10 @@ body::-webkit-scrollbar-thumb{
     .card-margenWork{
         max-width: 400px !important;
         min-width: 400px !important;
+    }
+
+    .heightImage{
+        height: 230px;
     }
 
     .mtb-5{ font-size: 1.3rem !important;}
@@ -1264,6 +1283,10 @@ body::-webkit-scrollbar-thumb{
         padding: 50px 0 30px 0;
     }
 
+    .heightImage{
+        height: 210px;
+    }
+
     .footer-block{ width: 50%; }
     .block2,
     .block1,
@@ -1271,14 +1294,6 @@ body::-webkit-scrollbar-thumb{
     .dir_center,
     .block4-title{ text-align: center; }
     .footer-cen{ justify-content: center; }
-    .slider,
-    .slide-track { height: 190px; }
-    .cliente1,
-    .cliente2,
-    .cliente5{ width: 160px; }
-    .cliente3,
-    .cliente7{ width: 450px; }
-    .cliente4{ width: 170px; } 
 }
 
 @media (max-width: 920px) {
@@ -1414,6 +1429,10 @@ body::-webkit-scrollbar-thumb{
         min-width: 315px !important;
     }
 
+    .heightImage{
+        height: 200px;
+    }
+
     .card-img-top{ height: 200px !important; }
     .formulario{ width: 98%; }
     .titlesPost{
@@ -1427,6 +1446,7 @@ body::-webkit-scrollbar-thumb{
         width: 80%;
     }
     .area-contacto{ height: 70%; }
+    .heightImage{ height: 195px; }
 }
 
 
@@ -1436,7 +1456,7 @@ body::-webkit-scrollbar-thumb{
         min-width: 240px !important;
         margin: 15px;
     }
-
+    
     .cert1{ width: 20%; }
     .cert2{ width: 19%; }
     .cert3{ width: 23%; }
@@ -1445,24 +1465,6 @@ body::-webkit-scrollbar-thumb{
     .cert6{ width: 36%; }
     .cert7{ width: 36%; }
 
-    .slider,
-    .slide-track {
-        height: 150px;
-    }
-
-    .cliente1,
-    .cliente2,
-    .cliente5{
-        width: 120px;
-    }
-
-    .cliente3,
-    .cliente7{
-        width: 380px;
-    }
-
-    .cliente4{ width: 130px;}  
-    .cliente6{ width: 245px;}
     .mx-15{ margin: 0 15px; }
     .grid{ grid-gap: 10px;}
     .diferencia{ height: 600px;}
@@ -1558,7 +1560,7 @@ body::-webkit-scrollbar-thumb{
         max-width: 290px !important;
         min-width: 290px !important;
     }
-
+    .heightImage{ height: 165px; }
     .bg-nosotros{  height: 650px; }
     .titulo_mapa{ font-size: 2.25rem; }
     .contacto_parrafo{ font-size: .85rem; }
