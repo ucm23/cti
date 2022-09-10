@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { useRouter } from 'next/router'
 
 const BlogItem = ({id,cover, date, title, desc}) => {
@@ -13,8 +14,16 @@ const BlogItem = ({id,cover, date, title, desc}) => {
             onClick={handleBlog}
         >
             <div className='img-blog'>
-                <img src={cover} alt={title} />
+                <Image
+                    width={342}
+                    height={230}
+                    src={cover} 
+                    alt={title}
+                    layout="responsive" />
             </div>
+            {/* <div className='img-blog'>
+                <img src={cover} alt={title} />
+            </div> */}
             <div className='textblog'>
                 <span>{date}</span>
                 <h2>{title}</h2>

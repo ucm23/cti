@@ -5,6 +5,7 @@ import { FcCalendar} from 'react-icons/fc'
 import { useRouter } from 'next/router'
 import Layout from '../../components/Layout';
 import Navbar from '../../components/Navbar';
+import Image from 'next/image';
 
 const post = () => {
     const [Blogdata, setBlogdata] = useState([])
@@ -75,7 +76,14 @@ const post = () => {
                         if(blog.id == id){
                             return (
                                 <div key={i} className='read-blog'>
-                                    <img className='img-detail' src={blog.cover} alt={blog.title} />
+                                    {/* <img className='img-detail' src={blog.cover} alt={blog.title} /> */}
+                                    <Image
+                                        className='img-detail' 
+                                        src={blog.cover} 
+                                        alt={blog.title}
+                                        width={840}
+                                        height={280}
+                                    />
                                     <div className='d-flex aut-date'>
                                         <div>
                                             <BsPersonCircle /><span>{blog.author}</span>

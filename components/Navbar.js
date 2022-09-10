@@ -42,7 +42,7 @@ const Bar = ({ seteEstoyMovil, temp}) => {
                 </Link>
 
                 <ul className={navMobile?'nav_mobile nav__link--show':'nav_link nav_link_menu'} >
-                    <img onClick={handleNav} src="/close.svg" className="nav_close" />
+                    <img onClick={handleNav} src="/close.svg" className="nav_close" alt='Cerrar Navbar de Grupo CTI' />
                     <li className="nav_items">
                         <Link href="/">
                             <a className="nav_links">Inicio</a>
@@ -74,7 +74,7 @@ const Bar = ({ seteEstoyMovil, temp}) => {
                 <div 
                     className='nav_menu'
                     onClick={handleNav}>
-                    <img src="/menu.svg" className="nav_img" />
+                    <img src="/menu.svg" className="nav_img" alt='Menu hamburgesa el Navbar' />
                 </div>      
             </nav>
     )

@@ -2,11 +2,12 @@ import { Stack } from '@mui/system'
 import { Fade } from 'react-awesome-reveal'
 import { GoCloudDownload } from 'react-icons/go'
 import { ColorButton } from '../lib/theme'
+import Image from 'next/image'
 
 const Servicio = ({t1, p1, a1, img1, clase, direction, alt}) => {
     return (
         <Fade direction={direction}>
-            <section className={clase}>
+            <article className={clase}>
                 <section className="servicio-texto">
                     <h1>{t1}</h1>
                     <p>{p1}</p>
@@ -17,8 +18,16 @@ const Servicio = ({t1, p1, a1, img1, clase, direction, alt}) => {
                         </Stack>
                     </a>
                 </section>
-                <img src={img1} alt={alt} />
-            </section>
+                <article className='img-sol'>
+                    <Image
+                        className='img-sol'
+                        width={452}
+                        height={320}
+                        src={img1} 
+                        alt={alt}
+                        layout="responsive" />
+                </article>
+            </article>
         </Fade>
     )
 }
