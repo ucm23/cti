@@ -21,9 +21,6 @@ const BlogItem = ({id,cover, date, title, desc}) => {
                     alt={title}
                     layout="responsive" />
             </div>
-            {/* <div className='img-blog'>
-                <img src={cover} alt={title} />
-            </div> */}
             <div className='textblog'>
                 <span>{date}</span>
                 <h2>{title}</h2>

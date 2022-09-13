@@ -13,16 +13,16 @@ const Footer = () => {
                     <div className='footer-block block1'>
                         <p className='block1-title'>CTI Tech-IN POS</p>
                         <div className='icons'>
-                            <Link href='#'>
+                            <Link href='https://www.facebook.com/Grupo-CTI-Tech-IN-POS-107516228774153'>
                                 <a target='_blank'><FaFacebookSquare /></a>
                             </Link>
-                            <Link href='#'>
+                            <Link href='https://www.instagram.com/ctitechinpos/'>
                                 <a target='_blank'><GrInstagram /></a>
                             </Link>
-                            <Link href='#'>
+                            <Link href='https://www.linkedin.com/in/cti-tech-in-pos-8bb120250/'>
                                 <a target='_blank'><AiFillLinkedin /></a>
                             </Link>
-                            <Link href='#'>
+                            <Link href='https://twitter.com/techinposcti'>
                                 <a target='_blank'><AiFillTwitterSquare /></a>
                             </Link> 
                         </div>

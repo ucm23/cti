@@ -143,10 +143,7 @@ body::-webkit-scrollbar-thumb{
     
 }
 
-.ancho{
-    display: inline;
-}
-
+.ancho{ display: inline; }
 .nav_items{ list-style: none; }
 .nav_link{
     margin-left: auto;
@@ -208,7 +205,6 @@ body::-webkit-scrollbar-thumb{
     width: 30px;
 }
 .nav_close{ display: none; }
-
 .nav_logo{
     display: flex;
     align-items: center;
@@ -278,10 +274,7 @@ body::-webkit-scrollbar-thumb{
 .bienvenida_titulo,
 .bienvenida_texto,
 .servicios-titulo,
-.trabajos-titulo{
-    color: var(--color-naranja-oscuro);
-}
-
+.trabajos-titulo{ color: var(--color-naranja-oscuro); }
 .bienvenida_titulo{
     font-size: var(--font-titulos);
     padding-top: 50px;
@@ -296,10 +289,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 .p-10{ padding: 25px; }
-.img_bienvenida{
-    /* width: 40%; */
-    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.281)) !important;
-}
+.img_bienvenida{ filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.281)) !important; }
 
 .year{
     position: relative;
@@ -367,12 +357,8 @@ body::-webkit-scrollbar-thumb{
     transition: all 0.2s ease-in-out !important;
 }
 
-.heightImage{
-    height: 250px;
-}
-
+.heightImage{ height: 250px; }
 .card-img-top:hover{ transform: scale(1.25) !important; }
-
 .icono-servicios{
     font-size: 3rem !important;
     color: var(--color-naranja-oscuro);
@@ -399,27 +385,8 @@ body::-webkit-scrollbar-thumb{
     color: var(--color-naranja-oscuro);
 }
 
-/* carousel */
 .flex-column{ flex-direction: column; }
-/* .cliente1,
-.cliente2,
-.cliente5{
-    width: 200px;
-}
-
-.cliente3,
-.cliente7{
-    width: 480px;
-}
-
-
-.cliente6{ 
-    width: 350px; } */
-.cliente4{
-    border-radius: 50%;
-}
-
-
+.cliente4{ border-radius: 50%; }
 .mx-15{ margin: 0 30px }
 .mx-10{ margin: 0 15px; }
 .clientes-titulo{
@@ -467,10 +434,7 @@ body::-webkit-scrollbar-thumb{
     top: 0;
 }
 
-.slide{
-    margin: 0 10px;
-}
-
+.slide{ margin: 0 10px; }
 .slide-track {
     -webkit-animation: scroll 25s linear infinite;
     animation: scroll 25s linear infinite;
@@ -620,19 +584,14 @@ body::-webkit-scrollbar-thumb{
 
 .block2 a:hover,
 .block4 a:hover,
-.icons a:hover{
-    color: #f1a026;
-}
-
+.icons a:hover{ color: #f1a026; }
 .footer-derechos{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.footer-derechos p{
-    display: block; 
-}
+.footer-derechos p{ display: block;  }
 .block4-icon{
     font-size: 1.4rem !important;
     margin-right: 4px;
@@ -762,10 +721,7 @@ body::-webkit-scrollbar-thumb{
     z-index: -1;
 }
 
-.not-header{
-    min-height: 650px;
-}
-
+.not-header{ min-height: 650px; }
 .contenedor{
     width: 90%;
     max-width: 1200px;
@@ -828,7 +784,6 @@ body::-webkit-scrollbar-thumb{
 }
 
 .contacto_ico{ font-size: 2.3rem; }
-
 .titulo_mapa{
     text-align: center;
     color: var(--color-naranja-oscuro);
@@ -868,10 +823,8 @@ body::-webkit-scrollbar-thumb{
 .contacto_HiLocationMarker{ color: #f7199a; }
 .contacto_HiMail{ color: #2888f5; }
 .contacto_HiPhoneOutgoing { color: #0c992a;}
-
 .leaflet-control-attribution{  visibility: hidden !important; }
 .my-25{ margin: 4% 0; }
-
 .titulo-diferencia{
     font-size: 2.2rem;
     color: var(--color-naranja-oscuro);
@@ -980,7 +933,6 @@ body::-webkit-scrollbar-thumb{
 }
 
 .formulario button[type="submit"]:hover { background: var(--color-naranja-oscuro); }
-
 .formulario .exito {
 	text-align: center;
 	font-size: 14px;
@@ -1047,19 +999,12 @@ body::-webkit-scrollbar-thumb{
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
 }
-.img-blog{
-    overflow: hidden;
-}
-
+.img-blog{ overflow: hidden; }
 .img-blog img{
     transform: scale(1.1);
     transition: all 0.2s ease-in-out;
 }
-
-.img-blog img:hover{
-    transform: scale(1);
-}
-
+.img-blog img:hover{ transform: scale(1); }
 .box  { 
     text-align: center; 
     cursor: pointer;
@@ -1068,10 +1013,7 @@ body::-webkit-scrollbar-thumb{
     filter: drop-shadow(0 0 0.20rem rgba(0, 0, 0, 0.185));
 }
 
-.box:hover{
-    transform: scale(1.038);
-}
-
+.box:hover{ transform: scale(1.038);}
 .img-detail{
     border-radius: 10px;
     display: block;
@@ -1124,36 +1066,20 @@ body::-webkit-scrollbar-thumb{
     margin: 20px 0;
 }
 
-.titlesPost{
-    width: 30%;
-    /* padding: 20px;  */
-}
-
+.titlesPost{ width: 30%; }
 .h3-posts{ text-align: center; }
-
-.titleItem{
-    margin: 15px 0; 
-}
-
+.titleItem{ margin: 15px 0; }
 .titleItem:hover{ 
     color: #eb770b;
     cursor: pointer;
  }
 
- .chat__copyright{
-    display: none !important;
- }
+ .chat__copyright{ display: none !important;}
 
 /* Responsive */
 
-@media (max-width: 1288px) {
-    .diferencia{ height: 330px; }
-}
-
-@media (max-width: 1200px){
-    .contacto-cont{  width: 170%; }
-}
-
+@media (max-width: 1288px){.diferencia{ height: 330px; }}
+@media (max-width: 1200px){.contacto-cont{  width: 170%; }}
 @media (max-width:1170px) {
     .nosotros-titulo{
         font-size: 2.85rem;
@@ -1197,10 +1123,7 @@ body::-webkit-scrollbar-thumb{
         min-width: 400px !important;
     }
 
-    .heightImage{
-        height: 230px;
-    }
-
+    .heightImage{ height: 230px; }
     .mtb-5{ font-size: 1.3rem !important;}
     .icono-servicios{ font-size: 2.6rem !important;}
     .font-work{ font-size: 1.7rem !important; }
@@ -1225,18 +1148,10 @@ body::-webkit-scrollbar-thumb{
         flex-wrap: wrap;
     }
 
-    .leaflet-container{
-        width: 100%;
-    }
-
-    .contacto1{
-        width: 30%;
-    }
-
+    .leaflet-container{ width: 100%; }
+    .contacto1{ width: 30%; }
     .contenedor .my-25{ margin: 0 0 40px 0; }
-    .formulario{
-         margin-top: 10px;
-    }
+    .formulario{ margin-top: 10px; }
 }
 
 @media (max-width:1023px) {
@@ -1269,10 +1184,7 @@ body::-webkit-scrollbar-thumb{
         padding: 50px 0 30px 0;
     }
 
-    .heightImage{
-        height: 210px;
-    }
-
+    .heightImage{ height: 210px; }
     .footer-block{ width: 50%; }
     .block2,
     .block1,
@@ -1370,14 +1282,12 @@ body::-webkit-scrollbar-thumb{
 
 @media (max-width: 820px) {
     .bg-footer{ height: 550px; }
-
     .footer-derechos{
         text-align: center;
         margin-top: 15px;
     }
 
     .footer-derechos p{  margin: 8px auto; }
-
     .cert1{ width: 17%; }
     .cert2{ width: 16%; }
     .cert3{ width: 20%; }
@@ -1389,14 +1299,12 @@ body::-webkit-scrollbar-thumb{
 
 @media (max-width: 800px) {
     .bienvenida{ width: 100%; }
-
     .movilBienv{
         display: flex;
         flex-direction: column;
     }
 
     .img_bienvenida{ display: none; }
-
     .year{
         top: -30px;
         width: 300px;
@@ -1409,21 +1317,15 @@ body::-webkit-scrollbar-thumb{
     }
 
     .bienvenida_texto,.year-text{ font-size: 1.1rem; }
-
     .card-margenWork{
         max-width: 315px !important;
         min-width: 315px !important;
     }
 
-    .heightImage{
-        height: 200px;
-    }
-
+    .heightImage{ height: 200px; }
     .card-img-top{ height: 200px !important; }
     .formulario{ width: 98%; }
-    .titlesPost{
-        display: none;
-    }
+    .titlesPost{ display: none;}
     .read-blog-container{ width: 100%;}
 }
 
@@ -1454,10 +1356,7 @@ body::-webkit-scrollbar-thumb{
     .mx-15{ margin: 0 15px; }
     .grid{ grid-gap: 10px;}
     .diferencia{ height: 600px;}
-    .correo-tel{
-        width: 100%;
-    }
-
+    .correo-tel{ width: 100%; }
     .m-correo-tel{ margin-bottom: 20px; }
 }
 
@@ -1483,7 +1382,6 @@ body::-webkit-scrollbar-thumb{
     .clientes-titulo,
     .text-center{ font-size: 2.85rem; }
     .clientes-subtitulo{  font-size: 1.1rem; }
-
     .certificacion{
         min-height: 535px;
         max-height: 535px;
@@ -1496,14 +1394,12 @@ body::-webkit-scrollbar-thumb{
     .cert5{ width: 42%; }
     .cert6{ width: 40%; }
     .cert7{ width: 40%; }
-
     .grid{
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 25px;
     }
 
     .nosotros-titulo{ font-size: 2rem; }
-
     .vis,
     .mis{
         padding: 20px;
@@ -1525,7 +1421,6 @@ body::-webkit-scrollbar-thumb{
 
     .bg-nosotros{ height: 600px; }
     .servicio-texto h1{ font-size: 1.6rem; }
-
     .servicio-texto p{
         font-size: 0.97rem;
         line-height: 1.6;
@@ -1541,7 +1436,6 @@ body::-webkit-scrollbar-thumb{
     .trabajos-titulo,
     .clientes-titulo,
     .text-center{ font-size: 2.6rem; }
-
     .card-margenWork{
         max-width: 290px !important;
         min-width: 290px !important;
@@ -1550,7 +1444,6 @@ body::-webkit-scrollbar-thumb{
     .bg-nosotros{  height: 650px; }
     .titulo_mapa{ font-size: 2.25rem; }
     .contacto_parrafo{ font-size: .85rem; }
-
     .handleBeforePost span,
     .handleNextPost span{
         font-size: .9rem;
