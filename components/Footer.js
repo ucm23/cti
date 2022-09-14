@@ -7,7 +7,7 @@ import Link from 'next/link'
 
 const Footer = () => {
     return (
-        <section className='bg-footer'>
+        <footer className='bg-footer'>
             <section className='footer-container'>
                 <div className='footer-blocks'>
                     <div className='footer-block block1'>
@@ -86,7 +86,7 @@ const Footer = () => {
                 </div>
             </section>
            {/*  <script src="https://account.snatchbot.me/script.js"></script><script>window.sntchChat.Init(270261)</script> */}
-        </section>
+        </footer>
     )
 }
 

@@ -4,7 +4,10 @@
   "description": "Sitio web de la empresa Grupo CTI",
   "main": "index.js",
   "scripts": {
-    "dev": "next"
+    "dev": "next",
+    "build" : "next build",
+    "export": "next build && next export",
+    "start": "next start"
   },
   "keywords": [],
   "author": "Sergio Cano Martínez",
