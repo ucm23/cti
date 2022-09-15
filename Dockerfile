@@ -1,10 +1,15 @@
-FROM node:14.5.0-alpine as build
+FROM node:14.18.0-alpine
 
-WORKDIR /app
-COPY . /app
+RUN mkdir /cti
+ 
+WORKDIR /cti
 
-RUN cd /app
+COPY ./package.json /cti
 
 RUN npm install
 
-CMD npm run dev
+COPY . /cti
+
+RUN npm run build
+
+CMD ["npm", "start"] 

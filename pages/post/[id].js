@@ -23,7 +23,8 @@ const post = () => {
     }, [])
 
     /**
-     * If the current post is the last post, then go to the first post. Otherwise, go to the next post.
+     * If the current post is the last post, then go to 
+     * the first post. Otherwise, go to the next post.
      */
     const handleNextPost = () =>{
         if(Number(id) == Blogdata.length){
@@ -34,7 +35,8 @@ const post = () => {
     }
 
     /**
-     * If the id is 1, then push the user to the last post in the array. If the id is not 1, then push
+     * If the id is 1, then push the user to the last post 
+     * in the array. If the id is not 1, then push
      * the user to the previous post in the array.
      */
     const handleBeforePost = () =>{
@@ -44,6 +46,7 @@ const post = () => {
             push(`/post/${(Number(id)-1)}`)
         }
     }
+    
     return (
         <Layout>
           <header className='blog-header'>
