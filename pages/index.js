@@ -45,9 +45,7 @@ const index = () => {
         })()
     }, [])
     
-    const handleClick = () => {
-        push('/Blog');    
-    }
+    const handleClick = () => push('/Nosotros');
 
     return (
         <Layout>
@@ -90,7 +88,6 @@ const index = () => {
                             src='/about.jpg'
                             width={460}
                             height={510}
-                            
                             layout="responsive"
                             alt='Bienvenida al grupo CTI' />
                     </div>
@@ -188,7 +185,11 @@ const index = () => {
                         {
                             cert.map(({src, className, alt},i) => {
                                 return (
-                                    <img key={i} className={className} src={src} alt={alt} />
+                                    <img 
+                                        key={i} 
+                                        className={className} 
+                                        src={src} 
+                                        alt={alt} />
                                 )
                             })
                         }

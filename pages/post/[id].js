@@ -22,30 +22,8 @@ const post = () => {
         })()
     }, [])
 
-    /**
-     * If the current post is the last post, then go to 
-     * the first post. Otherwise, go to the next post.
-     */
-    const handleNextPost = () =>{
-        if(Number(id) == Blogdata.length){
-            push(`/post/1`)
-        } else {
-            push(`/post/${(Number(id)+1)}`)
-        }
-    }
-
-    /**
-     * If the id is 1, then push the user to the last post 
-     * in the array. If the id is not 1, then push
-     * the user to the previous post in the array.
-     */
-    const handleBeforePost = () =>{
-        if(Number(id)==1){
-            push(`/post/${Blogdata.length}`)
-        } else {
-            push(`/post/${(Number(id)-1)}`)
-        }
-    }
+    const handleNextPost = () => push(`/post/${(Number(id)==Blogdata.length)?'1':(Number(id)+1)}`) 
+    const handleBeforePost = () => push(`/post/${(Number(id)==1)?Blogdata.length:(Number(id)-1)}`)
     
     return (
         <Layout>
@@ -55,19 +33,18 @@ const post = () => {
 
               {/* Encabezado */}
               <section className="hero_container container">
-                  <Fade direction="right">
-                    
+                  <Fade direction="right">  
                     {
-                            Blogdata.map((blog, i)=>{
-                                if(blog.id == id){
-                                    return (
-                                        <h1 key={i} className="titulo-read-blog">                                       
-                                            { blog.title }          
-                                        </h1>          
-                                    )
-                                }
-                            })
-                        }
+                        Blogdata.map((blog, i)=>{
+                            if(blog.id == id){
+                                return (
+                                    <h1 key={i} className="titulo-read-blog">                                       
+                                        { blog.title }          
+                                    </h1>          
+                                )
+                            }
+                        })
+                    }
                   </Fade>
               </section>
           </header>

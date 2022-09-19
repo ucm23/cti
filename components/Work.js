@@ -1,6 +1,5 @@
 import Card from '@mui/material/Card'
 import CardActions from '@mui/material/CardActions';
-import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import { ColorButton } from '../lib/theme';
@@ -13,9 +12,7 @@ import Image from 'next/image';
 const Work = ({titulo, src, alt}) => {
     const { push } = useRouter();
 
-    const handleClick = () => {
-        push('/Soluciones');    
-    }
+    const handleClick = () => push('/Soluciones');
 
     return (
         <Fade direction="left">
@@ -26,7 +23,6 @@ const Work = ({titulo, src, alt}) => {
                         width={435}
                         src={src}
                         alt={alt}
-                        /* layout="responsive" */
                         objectFit= "cover"
                         className='card-img-top'
                     />

@@ -12,10 +12,8 @@ import { Fade } from "react-awesome-reveal";
 const Service = ({titulo, descrip, icono}) => {
     const { push } = useRouter();
 
-    const handleClick = () => {
-        push('/Soluciones');    
-    }
-
+    const handleClick = () => push('/Soluciones');    
+    
     return (
         <Fade direction="right">
             <Card sx={{ minWidth: 275, maxWidth: 275 }} className='card-margen'>
