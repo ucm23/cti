@@ -43,7 +43,7 @@ const Contacto = () => {
                                             Ubicación
                                         </div>
                                         <div className="contacto_parrafo">
-                                            Av. Ejército Nacional 769, 769, piso 2. Col. Granada C.P. 11520
+                                            Av. Ejército Nacional 769, piso 2. Col. Granada C.P. 11520, CDMX.
                                         </div>
                                     </div>
                                 </div>
@@ -69,7 +69,7 @@ const Contacto = () => {
                                             Teléfono
                                         </div>
                                         <div className="contacto_parrafo">
-                                            811 588 03 05 <br /> 55 54 54 76 22
+                                            811 588 03 05 
                                         </div>
                                     </div>
                                 </div>
