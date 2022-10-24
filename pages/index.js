@@ -25,22 +25,18 @@ const index = () => {
         (async ()=>{
             const resWorks = await fetch("/data/work.json")
             const works = await resWorks.json();
-            console.log('Hice el fetch de work')
             setWork(works.works)
 
             const resServices = await fetch("/data/services.json")
             const service = await resServices.json();
-            console.log('Hice el fetch de services')
             setServices(service.services)
 
             const resCert = await fetch("/data/cert.json")
             const cer = await resCert.json();
-            console.log('Hice el fetch de cert')
             setCert(cer.cert)
 
             const resImgs = await fetch("/data/imgs.json")
             const img = await resImgs.json();
-            console.log('Hice el fetch de imgs')
             setImgs(img.imgs)
         })()
     }, [])
@@ -73,14 +69,14 @@ const index = () => {
 
                 </section>
             </header>
-
+            
             {/* Bienvenida */}
             <section>
                 <section className='containerWP movilBienv p-10'>
                     <div className='bienvenida'>
                         <Fade direction="left">
                             <h1 className='bienvenida_titulo'>Bienvenidos</h1>
-                            <p className='bienvenida_texto'>Grupo CTI Tech-IN POS es una empresa que se creo en el año 2001 con el objetivo de vender Hardware, Software y Servicios de Tecnología, ofrecemos un servicio y atención personalizada acorde a las necesidades de nuestros clientes, con una oferta competitiva y de valor en conjunto con nuestros socios de negocios.</p>    
+                            <p className='bienvenida_texto'>Grupo CTI Tech-IN POS es una empresa que se creo en el año 2010 con el objetivo de vender Hardware, Software y Servicios de Tecnología, ofrecemos un servicio y atención personalizada acorde a las necesidades de nuestros clientes, con una oferta competitiva y de valor en conjunto con nuestros socios de negocios.</p>    
                         </Fade>
                     </div>
                     <div className='img_bienvenida' style={{ width: 460 }} >
@@ -104,6 +100,10 @@ const index = () => {
                         </div>
                     </div>
                 </section>
+            </section>
+
+            <section className='video_cti'>
+                <div className='video' itemScope itemType="https://schema.org/VideoObject"><meta itemProp="name" content="Grupo CTI - Tu mejor aliado" /><meta itemProp="description" content="Grupo CTI - Tu mejor aliado" /><meta itemProp="uploadDate" content="2022-10-24T21:02:11.000Z" /><meta itemProp="thumbnailUrl" content="https://s1.dmcdn.net/v/UKbUh1ZLm3dcfdnLV/x180" /><meta itemProp="duration" content="P260S" /><meta itemProp="embedUrl" content="https://www.dailymotion.com/embed/video/kb0mTEPffjFkYAyqvsn" /><iframe className='i_video'  frameBorder="0" type="text/html" src="https://www.dailymotion.com/embed/video/kb0mTEPffjFkYAyqvsn?autoplay=1" allow="autoplay" allowFullScreen></iframe></div>
             </section>
 
             {/* Servicios */}
@@ -155,7 +155,7 @@ const index = () => {
             <section>
                 <section className='containerWP d-flex flex-column'>
                     <h1 className='clientes-titulo'>Nuestros Clientes</h1>
-                    <h3 className='clientes-subtitulo'>Ellos confian en la cálidad de Grupo CTI Tech-IN POS</h3>
+                    <h3 className='clientes-subtitulo'>Ellos confian en la calidad de Grupo CTI Tech-IN POS</h3>
                     <div className="slider">
                         <div className="slide-track">
                             {
