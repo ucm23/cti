@@ -1074,7 +1074,22 @@ body::-webkit-scrollbar-thumb{
     cursor: pointer;
  }
 
- .chat__copyright{ display: none !important;}
+.chat__copyright{ display: none !important;}
+
+.video_cti{
+    
+    height: 600px;
+}
+
+.i_video{
+    width:1050px; 
+    height:600px;
+}
+
+.video_cti .video iframe{
+    display: block;
+    margin: 0 auto;
+}
 
 /* Responsive */
 
@@ -1110,6 +1125,17 @@ body::-webkit-scrollbar-thumb{
     .containerWP{ width: 96%; }
     .slider{ width: 95%; }
     .formulario{ width: 90%; }
+}
+
+@media (max-width:1075px) {
+    .video_cti{
+        height: 500px;
+    }
+    
+    .i_video{
+        width:900px; 
+        height:500px;
+    }
 }
 
 @media (max-width:1050px){
@@ -1192,6 +1218,17 @@ body::-webkit-scrollbar-thumb{
     .dir_center,
     .block4-title{ text-align: center; }
     .footer-cen{ justify-content: center; }
+}
+
+@media (max-width:935px) {
+    .video_cti{
+        height: 400px;
+    }
+    
+    .i_video{
+        width:750px; 
+        height:400px;
+    }
 }
 
 @media (max-width: 920px) {
@@ -1329,6 +1366,17 @@ body::-webkit-scrollbar-thumb{
     .read-blog-container{ width: 100%;}
 }
 
+@media (max-width:775px) {
+    .video_cti{
+        height: 380px;
+    }
+    
+    .i_video{
+        width:650px; 
+        height:380px;
+    }
+}
+
 @media (max-width: 700px) {
     .contacto1{
         width: 80%;
@@ -1337,6 +1385,27 @@ body::-webkit-scrollbar-thumb{
     .heightImage{ height: 195px; }
 }
 
+@media (max-width:660px) {
+    .video_cti{
+        height: 350px;
+    }
+    
+    .i_video{
+        width:600px; 
+        height:350px;
+    }
+}
+
+@media (max-width:610px) {
+    .video_cti{
+        height: 300px;
+    }
+    
+    .i_video{
+        width:510px; 
+        height:300px;
+    }
+}
 
 @media (max-width: 650px){
     .card-margen{
@@ -1358,6 +1427,39 @@ body::-webkit-scrollbar-thumb{
     .diferencia{ height: 600px;}
     .correo-tel{ width: 100%; }
     .m-correo-tel{ margin-bottom: 20px; }
+}
+
+@media (max-width:520px) {
+    .video_cti{
+        height: 270px;
+    }
+    
+    .i_video{
+        width:470px; 
+        height:270px;
+    }
+}
+
+@media (max-width:470px) {
+    .video_cti{
+        height: 240px;
+    }
+    
+    .i_video{
+        width:420px; 
+        height:240px;
+    }
+}
+
+@media (max-width:420px) {
+    .video_cti{
+        height: 210px;
+    }
+    
+    .i_video{
+        width:380px; 
+        height:210px;
+    }
 }
 
 @media (max-width: 500px) {
@@ -1430,6 +1532,30 @@ body::-webkit-scrollbar-thumb{
     .titulo_mapa{ font-size: 2.4rem; }
     .contacto_parrafo{ font-size: .9rem; }
 }
+
+@media (max-width:385px) {
+    .video_cti{
+        height: 200px;
+    }
+    
+    .i_video{
+        width:360px; 
+        height:200px;
+    }
+}
+
+
+@media (max-width:363px) {
+    .video_cti{
+        height: 180px;
+    }
+    
+    .i_video{
+        width:320px; 
+        height:180px;
+    }
+}
+
 
 @media (max-width:360px) {
     .servicios-titulo,
