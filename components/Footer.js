@@ -72,8 +72,8 @@ const Footer = () => {
                             <a className='footer-cen'>
                                 <MdLocationOn className='block4-icon' />
                                 <div className='dir_center'>
-                                    <p>Av. Ejército Nacional 769, 769, piso</p> 
-                                    <p>2. Col. Granada C.P. 11520</p> 
+                                    <p>Av. Ejército Nacional 769, piso</p> 
+                                    <p>2. Col. Granada C.P. 11520, CDMX.</p> 
                                 </div>
                             </a>
                         </Link>
