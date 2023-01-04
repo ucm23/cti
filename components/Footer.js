@@ -49,7 +49,7 @@ const Footer = () => {
                     <div className='footer-block block3'>
                         <p className='block3-title'>Servicios</p>
                         <p>Ciberseguridad</p>
-                        <p>Aplicaciones Própias</p>
+                        <p>Aplicaciones Propias</p>
                         <p>Propiedad intelectual</p>
                         <p>Centro de ciberseguridad</p>
                         <p>Análisis y diseño de sistemas</p>
