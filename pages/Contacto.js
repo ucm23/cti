@@ -80,7 +80,6 @@ const Contacto = () => {
             </Fade>
         </div>
 
-
         <section className="contenedor overhid">
             <Fade direction="left">
                 <section className="my-25">

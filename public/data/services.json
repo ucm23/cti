@@ -2,7 +2,7 @@
     "services": [ 
         {
             "titulo": "Ciberseguridad",
-            "descrip": "La seguridad de la información se ha convertido en una agenda prioritaria, tanto para los gobiernos, como para la empresas",
+            "descrip": "La seguridad de la información se ha convertido en una agenda prioritaria, tanto para los gobiernos, como para las empresas",
             "icono": "security"
         },{
             "titulo": "Aplicaciones propias",

@@ -10,7 +10,6 @@ const Layout = ({children}) => {
 
     useEffect(() => {
         const handleRouteChange = (url) => {
-            console.log(url);
             NProgress.start();
         };
 

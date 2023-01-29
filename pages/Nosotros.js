@@ -1,6 +1,5 @@
-import { FcWorkflow, FcApproval, FcFlowChart, FcBriefcase } from 'react-icons/fc'
+import { FcWorkflow, FcApproval, FcFlowChart, FcBriefcase, FcAssistant, FcConferenceCall, FcDiploma1, FcDiploma2, FcGraduationCap, FcPositiveDynamic, FcRegisteredTrademark, FcParallelTasks, FcReading, FcRating, FcApprove } from 'react-icons/fc'
 import { Fade } from 'react-awesome-reveal'
-import Footer from '../components/Footer'
 import Layout from '../components/Layout'
 import Navbar from '../components/Navbar'
 import Image from 'next/image'
@@ -27,7 +26,7 @@ const Nosotros = () => {
                     <section className='nosotros-texto'>
                         <Fade direction="right">
                             <h1 className='nosotros-titulo'>Grupo CTI Tech-IN POS</h1>
-                            <p className='nosotros-text'>Somos un equipo multidisciplinario con más de 20 años de experiencia en servicios de consultoría especializada en: Seguridad Informática, Virtualización, Soporte Técnico, Infraestructura, Análisis y Diseño de Procesos, Políticas, Registro de Propiedad Intelectual y Desarrollo de Software agrandes corporativos de los sectores: financiero, manufactura, construcción, farmacéutico, automotriz, hospitalario, educativo y gobierno. Además contamos con Plataformas TI propias.</p>
+                            <p className='nosotros-text'>Somos un equipo multidisciplinario con más de 20 años de experiencia en servicios de consultoría especializada en: Seguridad Informática, Virtualización, Soporte Técnico, Infraestructura, Análisis y Diseño de Procesos, Políticas, Registro de Propiedad Intelectual y Desarrollo de Software a grandes corporativos de los sectores: financiero, manufactura, construcción, farmacéutico, automotriz, hospitalario, educativo y gobierno. Además contamos con Plataformas TI propias.</p>
                         </Fade>
                     </section>
                     <Fade direction="left">
@@ -40,6 +39,81 @@ const Nosotros = () => {
                             />
                         </section>
                     </Fade>
+                </section>
+            </section> <section className='my-25'>
+                <section className='contenedor diferenciaa'>
+                    <h1 className='titulo-diferencia'>Valores</h1>
+                    <div className='texto-diferencia overhid'>
+                        <Fade direction="down">
+                            <div className='p-diff'>
+                                <FcApprove className='icon-dif' />
+                                <p>Disciplina</p>
+                            </div>
+                        </Fade>
+                        <Fade direction="left">
+                            <div className='p-diff'>
+                                <FcAssistant className='icon-dif' />
+                                <p>Compromiso</p>
+                            </div>
+                        </Fade>
+                        
+                        <Fade direction="right">
+                            <div className='p-diff'>
+                                <FcDiploma2 className='icon-dif' />
+                                <p>Calidad</p>
+                            </div>
+                        </Fade>
+                        <Fade direction="down">
+                            <div className='p-diff'>
+                                <FcRating className='icon-dif' />
+                                <p>Lealtad</p>
+                            </div>
+                        </Fade>
+                        <Fade direction="up">
+                            <div className='p-diff'>
+                                <FcRegisteredTrademark className='icon-dif' />
+                                <p>Respeto</p>
+                            </div>
+                        </Fade>
+                        <Fade direction="left">
+                            <div className='p-diff'>
+                                <FcPositiveDynamic className='icon-dif' />
+                                <p>Innovación</p>
+                            </div>
+                        </Fade>
+
+                        <Fade direction="left">
+                            <div className='p-diff'>
+                                <FcReading className='icon-dif' />
+                                <p>Responsabilidad</p>
+                            </div>
+                        </Fade>
+                        
+                        <Fade direction="right">
+                            <div className='p-diff'>
+                                <FcParallelTasks className='icon-dif' />
+                                <p>Ética e integridad</p>
+                            </div>
+                        </Fade>
+                        <Fade direction="down">
+                            <div className='p-diff'>
+                                <FcDiploma1 className='icon-dif' />
+                                <p>Excelencia</p>
+                            </div>
+                        </Fade>
+                        <Fade direction="left">
+                            <div className='p-diff'>
+                                <FcConferenceCall className='icon-dif' />
+                                <p>Honestidad</p>
+                            </div>
+                        </Fade>
+                        <Fade direction="left">
+                            <div className='p-diff'>
+                                <FcGraduationCap className='icon-dif' />
+                                <p>Profesionalismo</p>
+                            </div>
+                        </Fade>
+                    </div>
                 </section>
             </section>
 
@@ -59,6 +133,8 @@ const Nosotros = () => {
                     </Fade>
                 </section>
             </section>
+
+           
 
             <section className='my-25'>
                 <section className='contenedor diferencia'>

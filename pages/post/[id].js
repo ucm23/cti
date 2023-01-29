@@ -71,7 +71,7 @@ const post = () => {
                                             <FcCalendar /><span>{blog.date}</span>
                                         </div>
                                     </div>
-                                    <div className='read-full'>{blog.read.p1}</div>                          
+                                    <div className='read-full'>{blog.read.p1}</div>
                                     <div className='read-full'>{blog.read.p2}</div>
                                     <div className='read-full'>{blog.read.p3}</div>
                                     <div className='read-full'>{blog.read.p4}</div>

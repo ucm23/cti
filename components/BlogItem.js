@@ -5,9 +5,7 @@ const BlogItem = ({id,cover, date, title, desc}) => {
 
     const { push } = useRouter()
   
-    const handleBlog = () =>{
-        push(`/post/${id}`)
-    }
+    const handleBlog = () => push(`/post/${id}`)
 
     return (
         <div className='box'
