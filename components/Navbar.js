@@ -34,49 +34,51 @@ const Bar = ({ seteEstoyMovil, temp}) => {
 
     return (
         <nav className="nav container">
-                <Link href="/">
-                    <a className="nav_logo">
-                        <img className='logo_cti' src='/logo.png' alt='Logo grupo CTI TECH_IN POS' />
-                        <p className="nav_title"> Grupo CTI</p>
-                    </a>
-                </Link>
+            <Link href="/">
+                <a className="nav_logo">
+                    <img className='logo_cti' src='/logo.png' alt='Logo grupo CTI TECH_IN POS' />
+                    <p className="nav_title"> Grupo CTI </p> 
+                </a>
+            </Link>
+            <p className='title_desc' >Consultores en sistemas de Tráfico e ITS</p>
+            
 
-                <ul className={navMobile?'nav_mobile nav__link--show':'nav_link nav_link_menu'} >
-                    <img onClick={handleNav} src="/close.svg" className="nav_close" alt='Cerrar Navbar de Grupo CTI' />
-                    <li className="nav_items">
-                        <Link href="/">
-                            <a className="nav_links">Inicio</a>
-                        </Link>
-                    </li>
-                    <li className="nav_items">
-                        <Link href="/Nosotros" >
-                            <a className="nav_links">Nosotros</a>
-                        </Link>
-                    </li>
-                    <li className="nav_items">
-                        <Link href="/Soluciones">
-                            <a className="nav_links">Soluciones</a>
-                        </Link>
-                    </li>
-                    <li className="nav_items">
-                        <Link href="/Blog">
-                            <a className="nav_links">Blog</a>
-                        </Link>
-                    </li>
-                    <li className="nav_items">
-                        <Link href="/Contacto">
-                            <a className="nav_links">Contacto</a>
-                        </Link>
-                    </li>
-                    
-                </ul>
+            <ul className={navMobile?'nav_mobile nav__link--show':'nav_link nav_link_menu'} >
+                <img onClick={handleNav} src="/close.svg" className="nav_close" alt='Cerrar Navbar de Grupo CTI' />
+                <li className="nav_items">
+                    <Link href="/">
+                        <a className="nav_links">Inicio</a>
+                    </Link>
+                </li>
+                <li className="nav_items">
+                    <Link href="/Nosotros" >
+                        <a className="nav_links">Nosotros</a>
+                    </Link>
+                </li>
+                <li className="nav_items">
+                    <Link href="/Soluciones">
+                        <a className="nav_links">Soluciones</a>
+                    </Link>
+                </li>
+                <li className="nav_items">
+                    <Link href="/Blog">
+                        <a className="nav_links">Blog</a>
+                    </Link>
+                </li>
+                <li className="nav_items">
+                    <Link href="/Contacto">
+                        <a className="nav_links">Contacto</a>
+                    </Link>
+                </li>
+                
+            </ul>
 
-                <div 
-                    className='nav_menu'
-                    onClick={handleNav}>
-                    <img src="/menu.svg" className="nav_img" alt='Menu hamburgesa el Navbar' />
-                </div>      
-            </nav>
+            <div 
+                className='nav_menu'
+                onClick={handleNav}>
+                <img src="/menu.svg" className="nav_img" alt='Menu hamburgesa el Navbar' />
+            </div>      
+        </nav>
     )
 }
 

@@ -33,20 +33,19 @@ const Soluciones = () => {
 
           <section className="contenedor overhid">
               {
-                serv.map(({t1, p1, a1, img1, clase, direction, alt}, i) => {
-                  return (
-                    <Servicio
-                        key={i}
-                        t1={t1}
-                        p1={p1}
-                        a1={a1}
-                        img1={img1}
-                        clase={clase}
-                        direction={direction}
-                        alt={alt}
-                    />
-                  )
-                })
+                serv.map(({t1,p1,a1,img1,clase,direction,alt,link}, i) => 
+                        <Servicio
+                            link={link}
+                            key={i}
+                            t1={t1}
+                            p1={p1}
+                            a1={a1}
+                            img1={img1}
+                            clase={clase}
+                            direction={direction}
+                            alt={alt}
+                        />
+                 )
               }
           </section>
 

@@ -1592,6 +1592,12 @@ body::-webkit-scrollbar-thumb{
     }
 }
 
+@media (max-width:690px){
+    .title_desc{
+        display: none;
+    }
+}
+
 
 @media (max-width:360px) {
     .servicios-titulo,
@@ -1623,3 +1629,4 @@ body::-webkit-scrollbar-thumb{
     .titulo_mapa{ font-size: 2rem; }
 }
     
+

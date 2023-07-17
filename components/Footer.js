@@ -11,7 +11,7 @@ const Footer = () => {
             <section className='footer-container'>
                 <div className='footer-blocks'>
                     <div className='footer-block block1'>
-                        <p className='block1-title'>CTI Tech-IN POS</p>
+                        <p className='block1-title'>GRUPO CTI</p>
                         <div className='icons'>
                             <Link href='https://www.facebook.com/Grupo-CTI-Tech-IN-POS-107516228774153'>
                                 <a target='_blank'><FaFacebookSquare /></a>

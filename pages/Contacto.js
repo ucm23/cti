@@ -29,7 +29,7 @@ const Contacto = () => {
         <div className="overhid">
             <Fade direction="right">
                 <div>
-                    <h1 className="titulo_mapa">Nos Ubicamos en</h1>
+                    <h1 className="titulo_mapa">Nos ubicamos en</h1>
                     <section className="area-mapa contenedor">
                         <Mapa />   
                         <div className="area-contacto">
