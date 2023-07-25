@@ -359,6 +359,15 @@ body::-webkit-scrollbar-thumb{
 
 .heightImage{ height: 250px; }
 .card-img-top:hover{ transform: scale(1.25) !important; }
+
+.card_badge_ribbon{
+    transform: scale(1) !important;
+    transition: all 0.2s ease-in-out !important;
+}
+
+.card_badge_ribbon:hover{ transform: scale(1.045) !important; }
+
+
 .icono-servicios{
     font-size: 3rem !important;
     color: var(--color-naranja-oscuro);

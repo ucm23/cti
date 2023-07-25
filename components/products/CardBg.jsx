@@ -3,7 +3,7 @@ import React from 'react'
 
 const CardBg = ({ children,width }) => {
     return (
-        <section className='badge_ribbon' style={{ width: width || '25%',padding: 10, }}>
+        <section className='badge_ribbon card_badge_ribbon' style={{ width: width || '25%',padding: 10, }}>
             <Badge.Ribbon text="__" >
                 <Card
                     style={{
