@@ -9,10 +9,26 @@ import Navbar from '../components/Navbar';
 import Work from '../components/Work';
 import dynamic from 'next/dynamic'
 import Image from 'next/image'
+import { Tabs } from 'antd';
+import Producs from '../components/products/Producs';
+import Services from '../components/products/Services';
 
 const Service = dynamic(() => import('../components/Service'), {
     suspense: true,
 })
+
+const items = [
+    {
+      key: '1',
+      label: <h1>Productos</h1>,
+      children: <Producs />,
+    },
+    {
+      key: '2',
+      label: <h1>Servicios</h1>,
+      children: <Services />,
+    }
+  ];
 
 const index = () => {
     const { push } = useRouter();
@@ -42,6 +58,8 @@ const index = () => {
     }, [])
     
     const handleClick = () => push('/Nosotros');
+    const date = new Date();
+    const year = date.getFullYear()
 
     return (
         <Layout>
@@ -87,19 +105,19 @@ const index = () => {
                             layout="responsive"
                             alt='Bienvenida al grupo CTI' />
                     </div>
-                    {/* <img 
-                        className='img_bienvenida'
-                        src='/about.jpg'
-                        alt='Bienvenida al grupo CTI' /> */}
                     <div className='years'>
                         <div className='year'>
                             <Fade direction="left">
-                                <h1 className='year-title'>12</h1>
+                                <h1 className='year-title'>{ year - 2010  }</h1>
                                 <p className='year-text'>Años de experiencia</p>
                             </Fade>
                         </div>
                     </div>
                 </section>
+            </section>
+
+            <section className='container py-2' >
+                <Tabs defaultActiveKey="1" items={items} centered size='large' />
             </section>
 
             <section className='video_cti'>
@@ -110,7 +128,7 @@ const index = () => {
             <section className='bg-servicios'>
                 <section className='containerWP servi'>
                     <h1 className='servicios-titulo'>
-                        Servicios
+                        Soluciones
                     </h1>
                     <div className='tarjetas'>
                         <Suspense fallback={'Loading...'}>

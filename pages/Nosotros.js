@@ -26,7 +26,12 @@ const Nosotros = () => {
                     <section className='nosotros-texto'>
                         <Fade direction="right">
                             <h1 className='nosotros-titulo'>Grupo CTI Tech-IN POS</h1>
-                            <p className='nosotros-text'>Somos un equipo multidisciplinario con más de 20 años de experiencia en servicios de consultoría especializada en: Seguridad Informática, Virtualización, Soporte Técnico, Infraestructura, Análisis y Diseño de Procesos, Políticas, Registro de Propiedad Intelectual y Desarrollo de Software a grandes corporativos de los sectores: financiero, manufactura, construcción, farmacéutico, automotriz, hospitalario, educativo y gobierno. Además contamos con Plataformas TI propias.</p>
+                            <p className='nosotros-text'>Somos un equipo multidisciplinario con más de 20 años de experiencia en servicios
+                            de consultoría especializada en: Sistemas de Tráfico- ITS-PEAJE-TELEPEAJE y Sistemas de Gestión para
+                            Autopistas de Cuota (SISTEMAS PROPIOS-Fabricantes y desarrollo propio), Seguridad Informática, Virtualización,
+                            Soporte Técnico, Infraestructura, Análisis y Diseño de Procesos, Políticas, Registro de Propiedad Intelectual
+                            Desarrollo de Software a grandes corporativos de los sectores: financiero, manufactura, construcción, 
+                            transporte, farmacéutico, automotriz, hospitalario, educativo y gobierno. Además, contamos con nuestras propias Plataformas TI, que complementan nuestra oferta de servicios y brindan soluciones eficientes a nuestros clientes.</p>
                         </Fade>
                     </section>
                     <Fade direction="left">
@@ -40,7 +45,9 @@ const Nosotros = () => {
                         </section>
                     </Fade>
                 </section>
-            </section> <section className='my-25'>
+            </section> 
+            
+            <section className='my-25'>
                 <section className='contenedor diferenciaa'>
                     <h1 className='titulo-diferencia'>Valores</h1>
                     <div className='texto-diferencia overhid'>

@@ -11,7 +11,6 @@ const Blog = () => {
         (async ()=>{
             const resBlog = await fetch("/data/test.json")
             const Blog = await resBlog.json();
-            console.log('Hice el fetch de blog')
             setBlogdata(Blog.Blogdata)
         })()
     }, [])

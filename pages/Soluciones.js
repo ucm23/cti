@@ -11,7 +11,6 @@ const Soluciones = () => {
         (async ()=>{
             const resSoluciones = await fetch("/data/serv.json")
             const soluciones = await resSoluciones.json();
-            console.log('Hice el fetch de soluciones')
             setServ(soluciones.serv)
         })()
     }, [])

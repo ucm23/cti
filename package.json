@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "next",
-    "build" : "next build",
+    "build": "next build",
     "export": "next build && next export",
     "start": "next start"
   },
@@ -17,13 +17,14 @@
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
     "@mui/material": "^5.10.0",
+    "antd": "^5.7.3",
     "formik": "^2.2.9",
     "leaflet": "^1.8.0",
     "next": "^12.2.4",
     "nprogress": "^0.2.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
     "react-awesome-reveal": "^4.0.0",
+    "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",
     "react-leaflet": "^4.0.1"
   }

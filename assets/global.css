@@ -619,7 +619,7 @@ body::-webkit-scrollbar-thumb{
 /* Página NOSOTROS */
 
 .bg-nosotros{
-    height: 500px;
+    height: 570px;
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
@@ -1107,13 +1107,37 @@ body::-webkit-scrollbar-thumb{
     margin: 0 auto;
 }
 
+.py-2{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 /* Responsive */
+@media (max-width: 900px){
+    .badge_ribbon{
+        width: 33% !important;
+    }
+}
+
+@media (max-width: 765px){
+    .badge_ribbon{
+        width: 45% !important;
+    }
+}
+
+@media (max-width: 550px){
+    .badge_ribbon{
+        width: 90% !important;
+    }
+}
+
 
 @media (max-width: 1288px){.diferencia{ height: 330px; }}
 @media (max-width: 1200px){.contacto-cont{  width: 170%; } .diferenciaa{
     height: 420px;
 }}
-@media (max-width:1170px) {
+
+@media (max-width:1250px) {
     .nosotros-titulo{
         font-size: 2.85rem;
         line-height: 1;
@@ -1139,6 +1163,32 @@ body::-webkit-scrollbar-thumb{
     .contacto-cont{ width: 185%; }
 }
 
+@media (max-width:1110px){
+    .nosotros-titulo{
+        font-size: 2.4rem;
+        line-height: 1;
+        margin-bottom: 10px;
+    }
+
+    .nosotros-text{
+        font-size:1rem;
+        line-height: 2;
+    }
+
+    .nosotros-texto{ padding: 0; }
+    .bg-nosotros{ height: 420px; }
+    .cti_person{
+        width: 90%;
+        margin: auto;
+    }
+}
+
+@media (max-width:1110px){
+    .nosotros-text{
+        font-size:0.9rem;
+        line-height: 2;
+    }
+}
 @media (max-width:1116px){
     .containerWP{ width: 96%; }
     .slider{ width: 95%; }
