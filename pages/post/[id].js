@@ -6,18 +6,29 @@ import { useRouter } from 'next/router'
 import Layout from '../../components/Layout';
 import Navbar from '../../components/Navbar';
 import Image from 'next/image';
+import moment from 'moment';
+
+const auth = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJzbXdpcnFlbHF4YXlwbG90ZXd4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTYwNTYxMjIsImV4cCI6MjAxMTYzMjEyMn0.Il1rEQXO1tk5XrjjFhCtMFE0nqqJBbfBx_b2KqEaMD0"
+const apikey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJzbXdpcnFlbHF4YXlwbG90ZXd4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTYwNTYxMjIsImV4cCI6MjAxMTYzMjEyMn0.Il1rEQXO1tk5XrjjFhCtMFE0nqqJBbfBx_b2KqEaMD0"
+const url = "https://bsmwirqelqxayplotewx.supabase.co/rest/v1/blogs"
 
 const post = () => {
     const [Blogdata, setBlogdata] = useState([])
     const { query, push } = useRouter();
     const { id } = query;
 
-    /* Fetching the data from the json file. */
     useEffect(() => {
         (async ()=>{
-            const resBlog = await fetch("/data/test.json")
+            const resBlog = await fetch(url, {
+                method: 'GET',
+                headers: { 
+                    "apikey": apikey,
+                    "Authorization": auth
+                }
+              }
+            )
             const Blog = await resBlog.json();
-            setBlogdata(Blog.Blogdata)
+            setBlogdata(Blog)
         })()
     }, [])
 
@@ -37,7 +48,10 @@ const post = () => {
                         Blogdata.map((blog, i)=>{
                             if(blog.id == id){
                                 return (
-                                    <h1 key={i} className="titulo-read-blog">                                       
+                                    <h1 
+                                        key={i} 
+                                        className="titulo-read-blog"
+                                    >                              
                                         { blog.title }          
                                     </h1>          
                                 )
@@ -55,27 +69,29 @@ const post = () => {
                         if(blog.id == id){
                             return (
                                 <div key={i} className='read-blog'>
-                                    {/* <img className='img-detail' src={blog.cover} alt={blog.title} /> */}
-                                    <Image
+                                    {/* <Image
                                         className='img-detail' 
                                         src={blog.cover} 
                                         alt={blog.title}
                                         width={840}
                                         height={280}
+                                    /> */}
+
+                                    <img
+                                        className='img-detail'
+                                        src={blog.image} 
+                                        alt={blog.title}
+                                        style={{ width: 840, height: 280 }}
                                     />
                                     <div className='d-flex aut-date'>
                                         <div>
                                             <BsPersonCircle /><span>{blog.author}</span>
                                         </div>
                                         <div>
-                                            <FcCalendar /><span>{blog.date}</span>
+                                            <FcCalendar /><span>{moment(blog.created_at).format('ll')}</span>
                                         </div>
                                     </div>
-                                    <div className='read-full'>{blog.read.p1}</div>
-                                    <div className='read-full'>{blog.read.p2}</div>
-                                    <div className='read-full'>{blog.read.p3}</div>
-                                    <div className='read-full'>{blog.read.p4}</div>
-                                    <div className='read-full'>{blog.read.p5}</div>
+                                    <div className='read-full'>{blog.body}</div>
                                 </div>
                             )
                         }

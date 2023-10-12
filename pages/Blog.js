@@ -4,14 +4,29 @@ import BlogItem from '../components/BlogItem'
 import Layout from '../components/Layout'
 import Navbar from '../components/Navbar'
 
+const auth = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJzbXdpcnFlbHF4YXlwbG90ZXd4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTYwNTYxMjIsImV4cCI6MjAxMTYzMjEyMn0.Il1rEQXO1tk5XrjjFhCtMFE0nqqJBbfBx_b2KqEaMD0"
+const apikey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJzbXdpcnFlbHF4YXlwbG90ZXd4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTYwNTYxMjIsImV4cCI6MjAxMTYzMjEyMn0.Il1rEQXO1tk5XrjjFhCtMFE0nqqJBbfBx_b2KqEaMD0"
+const url = "https://bsmwirqelqxayplotewx.supabase.co/rest/v1/blogs"
+import { Skeleton } from 'antd';
+
 const Blog = () => {
     const [Blogdata, setBlogdata] = useState([])
+    const [Loading, setLoading] = useState(true)
 
     useEffect(() => {
         (async ()=>{
-            const resBlog = await fetch("/data/test.json")
+            setLoading(true)
+            const resBlog = await fetch(url, {
+                method: 'GET',
+                headers: { 
+                    "apikey": apikey,
+                    "Authorization": auth
+                }
+              }
+            )
             const Blog = await resBlog.json();
-            setBlogdata(Blog.Blogdata)
+            setBlogdata(Blog)
+            setLoading(false)
         })()
     }, [])
 
@@ -39,18 +54,28 @@ const Blog = () => {
 
               <div className='contain grid topMarign'>
                   {
-                    Blogdata.map(({id,cover, date, title, desc}, i) => {
-                      return (
-                          <BlogItem
-                            key={i}
-                            id={id}
-                            cover={cover}
-                            date={date}
-                            title={title}
-                            desc={desc}
-                          />
+                    Loading 
+                      ? (
+                        <>
+                          {
+                            Array.from({ length: 6 }).map((_, index) =>
+                              <Skeleton key={index} active />
+                            )
+                          }
+                        </>
                       )
-                    })
+                      : (
+                          Blogdata.map(({id,image, created_at, title}, i) =>
+                                <BlogItem
+                                  key={i}
+                                  id={id}
+                                  cover={image}
+                                  date={created_at}
+                                  title={title}
+                                />
+                            )
+                      )
+                    
                   }
               </div>
             </div>

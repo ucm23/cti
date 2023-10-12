@@ -1,5 +1,4 @@
 import { Fade } from "react-awesome-reveal";
-import Footer from "../components/Footer";
 import Layout from "../components/Layout";
 import Navbar from "../components/Navbar";
 import dynamic from 'next/dynamic';

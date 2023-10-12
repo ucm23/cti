@@ -11,8 +11,8 @@ const Formulario = () => {
 
 	const sendEmail = () =>{
 		emailjs.sendForm('service_f8cxw7w','template_84xbcfa', form.current, '3TkCFtArpfX95oASO')
-			.then(response => console.log(response))
-			.catch(er => console.log(er))
+			.then(response => ()=>{})
+			.catch(er => ()=>{})
 	}
 
 	return (
