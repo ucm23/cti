@@ -2,10 +2,10 @@ import moment from 'moment/moment'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
 
-const BlogItem = ({id,cover, date, title, desc}) => {
+const BlogItem = ({ id, cover, date, title, desc }) => {
 
     const { push } = useRouter()
-  
+
     const handleBlog = () => push(`/post/${id}`)
 
     return (
@@ -21,13 +21,13 @@ const BlogItem = ({id,cover, date, title, desc}) => {
                     layout="responsive" /> */}
 
                 <img
-                   src={cover} 
-                   alt={title} 
-                   style={{ width: 342, height: 230 }}
+                    src={cover}
+                    alt={title}
+                    style={{ width: 342, height: 230 }}
                 />
             </div>
             <div className='textblog'>
-                <span>{moment(date).format('ll') }</span>
+                <span>{moment(date).format('ll')}</span>
                 <h2>{title}</h2>
                 {/* <p>{desc}</p> */}
                 <span>Leer más...</span>

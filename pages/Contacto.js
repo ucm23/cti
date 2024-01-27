@@ -55,7 +55,7 @@ const Contacto = () => {
                                             Correo
                                         </div>
                                         <div className="contacto_parrafo">
-                                            contacto@consultores.cti.com.mx<br /> gsamano@orbnote.com
+                                            contacto@consultores-cti.com.mx<br /> gsamano@orbnote.com
                                         </div>
                                     </div>
                                 </div>

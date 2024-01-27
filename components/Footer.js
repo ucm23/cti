@@ -58,9 +58,9 @@ const Footer = () => {
                     <div className='footer-block block4'>
                         <p className='block4-title'>Contáctanos</p>
 
-                        <Link href='mailto:contacto@consultores.cti.com.mx'>
+                        <Link href='mailto:contacto@consultores-cti.com.mx'>
                             <a target='_blank' className='footer-cen'>
-                                <HiMail className='block4-icon' /><p>contacto@consultores.cti.com.mx</p>
+                                <HiMail className='block4-icon' /><p>contacto@consultores-cti.com.mx</p>
                             </a>
                         </Link>
 

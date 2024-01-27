@@ -51,30 +51,6 @@ const Layout = ({children}) => {
             </Head>
                 <main>
                     {children}
-
-                    {
-                        (route !== "/Login") && (
-                            storedItem === "gdOf3Jv2UvsAv2Yf" 
-                                ? (
-                                    <FloatButton
-                                        shape="circle"
-                                        onClick={logout}
-                                        type="primary"
-                                        style={{ right: 94 }}
-                                        tooltip={<div>Salir</div>}
-                                    />
-                                    )
-                                : (
-                                    <FloatButton
-                                        shape="circle"
-                                        onClick={handleNavigate}
-                                        type="primary"
-                                        style={{ right: 94 }}
-                                        tooltip={<div>Ingresar</div>}
-                                    />
-                                )
-                        )
-                    }
                 </main>
             <Footer />
       </>
