@@ -55,12 +55,12 @@ const Bar = ({ seteEstoyMovil, temp }) => {
                         <a className="nav_links">Nosotros</a>
                     </Link>
                 </li>
-                {/*<li className="nav_items">
+                <li className="nav_items">
                     <Link href="/Soluciones">
                         <a className="nav_links">Soluciones</a>
                     </Link>
-    </li>*/}
-                <li className="nav_items">
+                </li>
+                {/*<li className="nav_items">
                     <a className="nav_links" onClick={handleSubMenu1}>Soluciones</a>
                     {showSubMenu1 &&
                         <ul class={`${!navMobile ? "submenu-top" : "submenu-bottom"}`}>
@@ -80,7 +80,7 @@ const Bar = ({ seteEstoyMovil, temp }) => {
                             </li>
                         </ul>
                     }
-                </li>
+                </li>*/}
                 <li className="nav_items">
                     <Link href="/Blog">
                         <a className="nav_links">Blog</a>

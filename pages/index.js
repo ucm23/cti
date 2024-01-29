@@ -48,16 +48,14 @@ const index = () => {
 
     const getGeolocation = () => {
         let geolocation = { lat: null, log: null };
-        //if ("geolocation" in navigator) {
-            try {
-                navigator.geolocation.getCurrentPosition(function (position) {
-                    geolocation.lat = position.coords.latitude;
-                    geolocation.log = position.coords.longitude;
-                });
-            } catch (error) {
-                console.log("🚀 ~ getGeolocation ~ error:", error)
-            }
-        //}
+        try {
+            navigator.geolocation.getCurrentPosition(function (position) {
+                geolocation.lat = position.coords.latitude;
+                geolocation.log = position.coords.longitude;
+            });
+        } catch (error) {
+            console.log("🚀 ~ getGeolocation ~ error:", error)
+        }
         return geolocation;
     }
 
